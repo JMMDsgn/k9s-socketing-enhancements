@@ -1,0 +1,548 @@
+{
+  "Parent": "Template_Weapon_Mace",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Mace_Cobalt_Mix_Emerald_Quartz.name",
+    "Description": "server.items.Weapon_Mix_Emerald_Quartz.description"
+  },
+  "Model": "Items/Weapon/Mace/Cobalt/Cobalt_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Mace/Cobalt/ZGemMix/Cobalt_Texture_Mix_Emerald_Quartz.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Mace_Cobalt_Mix_Emerald_Quartz.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Mace_Cobalt_Emerald",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Quartz",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Maces"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 12,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 12,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Swing_Up_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 12,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Swing_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 18,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 18,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Swing_Up_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 18,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Groundslam_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Signature_Groundslam_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 116
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 22,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.5,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -44,
+      -42
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "TargetEntityPart": "Self",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": -0.9,
+        "Z": 0.15,
+        "X": -0.13
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Yaw": 0,
+        "Pitch": 0
+      }
+    },
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "TargetEntityPart": "Self",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": -0.3,
+        "Z": 0.15,
+        "X": 0.2
+      },
+      "TargetNodeName": "Socket3"
+    },
+    {
+      "SystemId": "Aura_Quartz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.2,
+        "Z": 0
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Aura_Quartz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.2,
+        "Z": 0
+      },
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "TargetEntityPart": "Self",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.8,
+        "Z": 0.15,
+        "X": -0.13
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Yaw": 0,
+        "Pitch": 0
+      }
+    },
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "TargetEntityPart": "Self",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.2,
+        "Z": 0.15,
+        "X": 0.2
+      },
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Aura_Quartz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.2,
+        "Z": 0
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Aura_Quartz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.2,
+        "Z": 0
+      },
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Handle2",
+      "TrailId": "Trail_Emerald",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "RotationOffset": {
+        "Pitch": 90,
+        "Roll": 0,
+        "Yaw": 90
+      },
+      "TargetNodeName": "Handle2",
+      "TrailId": "Quartz_Trail",
+      "TargetEntityPart": "PrimaryItem",
+      "PositionOffset": {
+        "X": 0
+      }
+    }
+  ],
+  "Variant": true,
+  "Interactions": {
+    "Held": {
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "ValueType": "Percent",
+          "StatModifiers": {
+            "Health": 0.25
+          },
+          "Entity": "User"
+        }
+      ]
+    }
+  }
+}

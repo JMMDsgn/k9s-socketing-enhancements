@@ -1,0 +1,209 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Tool_Pickaxe_Thorium_Topaz.name",
+    "Description": "server.items.Tool_Pickaxe_Thorium_Topaz.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Tool_Pickaxe_Thorium_Topaz.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Parent": "Tool_Pickaxe_Crude",
+  "Model": "Items/Tool/Pickaxe/Thorium/Thorium_Socketed.blockymodel",
+  "Texture": "Items/Tool/Pickaxe/Thorium/Topaz/Thorium_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Tool_Pickaxe_Thorium",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Quartz",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Engraving",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Tools"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Rocks",
+        "Quality": 4
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 0.17,
+        "GatherType": "VolcanicRocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreCopper"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreIron"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreSilver"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreGold"
+      },
+      {
+        "Power": 0.25,
+        "GatherType": "OreThorium"
+      },
+      {
+        "Power": 0.25,
+        "GatherType": "OreCobalt"
+      },
+      {
+        "Power": 0.125,
+        "GatherType": "OreAdamantite",
+        "Quality": 4
+      },
+      {
+        "Power": 0.084,
+        "GatherType": "OreMithril"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
+  },
+  "MaxDurability": 325,
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      45,
+      270,
+      0
+    ],
+    "Translation": [
+      27,
+      -28
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Variant": true,
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Aura_Topaz",
+      "Scale": 0.15,
+      "PositionOffset": {
+        "Y": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0
+      },
+      "Color": "#ffeebf"
+    },
+    {
+      "SystemId": "Aura_Topaz",
+      "Scale": 0.15,
+      "PositionOffset": {
+        "Y": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0
+      }
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Aura_Topaz",
+      "Scale": 0.15,
+      "PositionOffset": {
+        "Y": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0
+      },
+      "Color": "#ffeebf"
+    },
+    {
+      "SystemId": "Aura_Topaz",
+      "Scale": 0.15,
+      "PositionOffset": {
+        "Y": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0
+      }
+    }
+  ],
+  "Interactions": {
+    "Held": {
+      "Interactions": [
+        {
+          "Type": "RunOnBlockTypes",
+          "BlockSets": [
+            "Ores",
+            "Ore_Gold",
+            "Gems"
+          ],
+          "MaxCount": 30,
+          "Next": {
+            "Type": "ChangeBlock"
+          },
+          "Range": 5
+        }
+      ]
+    }
+  }
+}

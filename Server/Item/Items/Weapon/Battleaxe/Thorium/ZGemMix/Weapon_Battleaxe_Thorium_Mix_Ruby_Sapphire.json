@@ -1,0 +1,295 @@
+{
+  "Parent": "Template_Weapon_Battleaxe",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Battleaxe_Thorium_Mix_Ruby_Sapphire.name",
+    "Description": "server.items.Weapon_Mix_Ruby_Sapphire.description"
+  },
+  "Model": "Items/Weapon/Battleaxe/Thorium/Thorium_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Battleaxe/Thorium/ZGemMix/Thorium_Texture_Mix_Ruby_Sapphire.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Battleaxe_Thorium_Mix_Ruby_Sapphire.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Battleaxe_Thorium_Ruby",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Sapphire",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Battleaxes"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 53
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 0.5
+          }
+        }
+      ]
+    },
+    "Swing_Down_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 29
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 0.5
+          }
+        }
+      ]
+    },
+    "Swing_Down_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 35
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 0.5
+          }
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 43
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 1
+          }
+        }
+      ]
+    },
+    "Signature_Whirlwind_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 25
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.45,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -44,
+      -42
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.45,
+      "PositionOffset": {
+        "Y": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3",
+      "Color": "#254dff"
+    },
+    {
+      "SystemId": "FireSword",
+      "TargetEntityPart": "Self",
+      "Scale": 0.9,
+      "PositionOffset": {
+        "Y": -0.35,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "BladeCenter",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3",
+      "Color": "#254dff"
+    },
+    {
+      "SystemId": "FireSword",
+      "TargetEntityPart": "Self",
+      "Scale": 0.8,
+      "PositionOffset": {
+        "Y": -0.35,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "BladeCenter",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": -45,
+        "Yaw": 10
+      },
+      "TargetNodeName": "BladeCenter",
+      "TrailId": "Ruby_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.3,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Sapphire_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Variant": true
+}

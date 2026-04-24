@@ -1,0 +1,164 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Tool_Pickaxe_Adamantite_Ruby.name",
+    "Description": "server.items.Tool_Ruby.description"
+  },
+  "Parent": "Tool_Pickaxe_Crude",
+  "Icon": "Icons/ItemsGenerated/Tool_Pickaxe_Adamantite_Ruby.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Model": "Items/Tool/Pickaxe/Adamantite/Adamantite_Socketed.blockymodel",
+  "Texture": "Items/Tool/Pickaxe/Adamantite/Ruby/Adamantite_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Tool_Pickaxe_Adamantite",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Ruby",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Tools"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 1.0,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 1,
+        "GatherType": "Rocks",
+        "Quality": 5
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 0.44,
+        "GatherType": "VolcanicRocks"
+      },
+      {
+        "Power": 1,
+        "GatherType": "OreCopper"
+      },
+      {
+        "Power": 1,
+        "GatherType": "OreIron"
+      },
+      {
+        "Power": 1,
+        "GatherType": "OreSilver"
+      },
+      {
+        "Power": 1,
+        "GatherType": "OreGold"
+      },
+      {
+        "Power": 1,
+        "GatherType": "OreThorium"
+      },
+      {
+        "Power": 1,
+        "GatherType": "OreCobalt"
+      },
+      {
+        "Power": 0.35,
+        "GatherType": "OreAdamantite",
+        "Quality": 4
+      },
+      {
+        "Power": 0.225,
+        "GatherType": "OreMithril"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil",
+          "Wood"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
+  },
+  "MaxDurability": 400.0,
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      45,
+      270,
+      0
+    ],
+    "Translation": [
+      27,
+      -28
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.35,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "Variant": true
+}

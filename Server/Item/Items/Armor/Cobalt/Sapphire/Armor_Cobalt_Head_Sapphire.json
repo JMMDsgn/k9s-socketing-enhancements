@@ -1,0 +1,115 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Cobalt_Head_Sapphire.name",
+    "Description": "server.items.Armor_Sapphire.description"
+  },
+  "Parent": "Armor_Iron_Head",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Cobalt_Head_Sapphire.png",
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      23.06,
+      43.315,
+      23.06
+    ],
+    "Translation": [
+      0,
+      -8.1
+    ]
+  },
+  "Model": "Items/Armor/Cobalt/Head_Socketed.blockymodel",
+  "Texture": "Items/Armor/Cobalt/Sapphire/Head_Socket_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Cobalt_Head",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Sapphire",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.064,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.064,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 12,
+          "CalculationType": "Additive"
+        }
+      ],
+      "Mana": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 10
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Signature": [
+        {
+          "Amount": 0.03,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 120,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Cobalt",
+      "Socketed"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Light": {
+    "Color": "#224",
+    "Radius": 0
+  },
+  "Variant": true
+}

@@ -1,0 +1,323 @@
+{
+  "Parent": "Template_Weapon_Sword",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Sword_Thorium_Mix_Ruby_Quartz.name",
+    "Description": "server.items.Weapon_Mix_Ruby_Quartz.description"
+  },
+  "Model": "Items/Weapon/Sword/Thorium/Thorium.blockymodel",
+  "Texture": "Items/Weapon/Sword/Thorium/ZGemMix/Thorium_Texture_Mix_Quartz_Ruby.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Sword_Thorium_Zmix_Ruby_Quartz.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Sword_Thorium_Ruby",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Quartz",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Swords"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 19
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 19
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 29
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 39
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 30
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 77
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.21,
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -33,
+      -33
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 20,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Variant": true,
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Aura_Quartz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.33,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0
+      },
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "FireSword",
+      "TargetEntityPart": "Self",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.3,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.15,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 45,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Ruby_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.15,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Quartz_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Aura_Quartz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.33,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0
+      },
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "FireSword",
+      "TargetEntityPart": "Self",
+      "Scale": 0.7,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.3,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Interactions": {
+    "Held": {
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "ValueType": "Percent",
+          "StatModifiers": {
+            "Health": 0.25
+          },
+          "Entity": "User"
+        }
+      ]
+    }
+  }
+}

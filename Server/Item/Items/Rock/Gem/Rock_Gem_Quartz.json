@@ -1,0 +1,68 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Rock_Gem_Quartz.name",
+    "Description": "server.items.Rock_Gem_Emerald.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Rock_Gem_Quartz.png",
+  "Categories": [
+    "Blocks.Ores"
+  ],
+  "PlayerAnimationsId": "Block",
+  "BlockType": {
+    "Material": "Solid",
+    "DrawType": "Model",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/Ores/Gem.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Ores/Gem_Textures/Quartz.png",
+        "Weight": 1
+      }
+    ],
+    "Group": "Stone",
+    "Flags": {},
+    "Gathering": {
+      "Breaking": {
+        "GatherType": "Rocks"
+      }
+    },
+    "VariantRotation": "DoublePipe",
+    "RandomRotation": "YawStep90",
+    "BlockParticleSetId": "Crystal",
+    "ParticleColor": "#f9cff4",
+    "BlockSoundSetId": "Gem",
+    "AmbientSoundEventId": "SFX_Gem_Emit_Loop",
+    "Light": {
+      "Color": "#d7b",
+      "Radius": 0
+    },
+    "Particles": [
+      {
+        "Color": "#e6addf",
+        "SystemId": "Block_Gem_Sparks"
+      }
+    ]
+  },
+  "Tags": {
+    "Type": [
+      "Rock"
+    ],
+    "Family": [
+      "Gem"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Blocks_Stone",
+  "MaxStack": 25,
+  "IconProperties": {
+    "Scale": 0.58823,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -13.5
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "StatModifiers": {
+    "Stamina": 10
+  },
+  "ValueType": "Percent",
+  "OverlapBehavior": "Overwrite",
+  "Duration": 0.005,
+  "DamageCalculatorCooldown": 0,
+  "ApplicationEffects": {
+    "Particles": [
+      {
+        "SystemId": "Potion_Stamina_Burst"
+      }
+    ],
+    "WorldSoundEventId": "SFX_Stamina_Potion_Success"
+  },
+  "RemovalBehavior": "Complete"
+}

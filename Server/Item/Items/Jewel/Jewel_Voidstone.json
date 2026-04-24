@@ -1,0 +1,87 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Jewel_Voidstone.name",
+    "Description": "server.items.Jewel_Voidstone.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Jewel_Voidstone.png",
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/Jewels/Jewel_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Jewels/Jewel_Voidstone.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Crystal",
+    "Light": {
+      "Color": "#214",
+      "Radius": 0
+    }
+  },
+  "PlayerAnimationsId": "Item",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  },
+  "ItemLevel": 50,
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      34,
+      33,
+      33
+    ],
+    "Translation": [
+      1,
+      -5
+    ]
+  },
+  "Quality": "Rare",
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Particles": [
+    {
+      "SystemId": "Fire_Green",
+      "Scale": 0.3,
+      "Color": "#350d48",
+      "PositionOffset": {
+        "Y": -0.05
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Jewel"
+    }
+  ],
+  "MaxStack": 1,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Crystal_Purple",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Rock_Gem_Voidstone",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Categories": [
+          "Arcane_Jewelworking"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 3,
+    "OutputQuantity": 1
+  }
+}

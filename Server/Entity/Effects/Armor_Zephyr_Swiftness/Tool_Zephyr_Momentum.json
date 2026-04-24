@@ -1,0 +1,42 @@
+{
+  "ApplicationEffects": {
+    "HorizontalSpeedMultiplier": 1.1,
+    "Particles": [
+      {
+        "SystemId": "Zephyr_Swiftness_Effect",
+        "TargetNodeName": "",
+        "PositionOffset": {
+          "X": 0,
+          "Z": -0.1,
+          "Y": 0.25
+        },
+        "RotationOffset": {
+          "Yaw": -90,
+          "Pitch": 0,
+          "Roll": 90
+        },
+        "Scale": 0.5
+      }
+    ],
+    "FirstPersonParticles": [
+      {
+        "SystemId": "Zephyr_Swiftness_Effect",
+        "TargetNodeName": "",
+        "PositionOffset": {
+          "X": 0,
+          "Z": -0.1,
+          "Y": 0.25
+        },
+        "RotationOffset": {
+          "Yaw": -90,
+          "Pitch": 0,
+          "Roll": 90
+        },
+        "Scale": 0.5,
+        "TargetEntityPart": "Self"
+      }
+    ],
+    "WorldSoundEventId": "SFX_Campfire_Build"
+  },
+  "Duration": 5
+}

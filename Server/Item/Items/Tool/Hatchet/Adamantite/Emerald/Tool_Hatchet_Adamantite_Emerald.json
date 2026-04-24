@@ -1,0 +1,202 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Tool_Hatchet_Adamantite_Emerald.name",
+    "Description": "server.items.Tool_Emerald.description"
+  },
+  "Categories": [
+    "Items.Tools"
+  ],
+  "Set": "Tool_Cobalt",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Model": "Items/Tool/Hatchet/Adamantite/Adamantite_Socketed.blockymodel",
+  "Texture": "Items/Tool/Hatchet/Adamantite/Emerald/Adamantite_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Tool_Hatchet_Adamantite",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Emerald",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Tools"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Rocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 0.017,
+        "GatherType": "VolcanicRocks"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreCopper"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreIron"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreSilver"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreGold"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreThorium"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreCobalt"
+      },
+      {
+        "Power": 0.042,
+        "GatherType": "OreAdamantite"
+      },
+      {
+        "Power": 0.036,
+        "GatherType": "OreMithril"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil",
+          "Wood"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
+  },
+  "PlayerAnimationsId": "Hatchet",
+  "Utility": {
+    "Compatible": true
+  },
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        "Emerald_Tool_Hatchet_Primary"
+      ]
+    },
+    "Secondary": "Hatchet_Attack",
+    "Held": {
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "ValueType": "Percent",
+          "StatModifiers": {
+            "Health": 0.25
+          },
+          "Entity": "User"
+        }
+      ]
+    }
+  },
+  "InteractionVars": {
+    "Hatchet_Chop_Effect": "Hatchet_Chop_Effect",
+    "Hatchet_Chop_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Hatchet_Chop_Damage",
+          "DamageCalculator": {
+            "Type": "Dps",
+            "BaseDamage": {
+              "Physical": 5
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Axe_Iron_Impact"
+          }
+        }
+      ]
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      45,
+      270,
+      0
+    ],
+    "Translation": [
+      31,
+      -24
+    ]
+  },
+  "Icon": "Icons/ItemsGenerated/Tool_Hatchet_Adamantite_Emerald.png",
+  "DroppedItemAnimation": "Items/Animations/Dropped/Dropped_Diagonal_Left.blockyanim",
+  "MaxDurability": 400,
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Weapons_Wood",
+  "Particles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": -0.3,
+        "Z": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": -0.3,
+        "Z": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    }
+  ],
+  "Variant": true
+}

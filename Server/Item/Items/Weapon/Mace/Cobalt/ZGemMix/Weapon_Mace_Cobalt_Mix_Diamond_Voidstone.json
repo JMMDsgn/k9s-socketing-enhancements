@@ -1,0 +1,381 @@
+{
+  "Parent": "Template_Weapon_Mace",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Mace_Cobalt_Mix_Diamond_Voidstone.name",
+    "Description": "server.items.Weapon_Mix_Diamond_Voidstone.description"
+  },
+  "Model": "Items/Weapon/Mace/Cobalt/Cobalt_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Mace/Cobalt/ZGemMix/Cobalt_Texture_Mix_Diamond_Voidstone.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Mace_Cobalt_Mix_Diamond_Voidstone.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Mace_Cobalt_Diamond",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Voidstone",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Maces"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Up_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T2"
+        }
+      ]
+    },
+    "Swing_Right_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T2"
+        }
+      ]
+    },
+    "Swing_Up_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T2"
+        }
+      ]
+    },
+    "Groundslam_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Signature_Groundslam_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 116
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T3"
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.01,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -44,
+      -42
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 1.2,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.35,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.6,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 270
+      }
+    },
+    {
+      "SystemId": "Fire_Green",
+      "TargetEntityPart": "Self",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": -0.2,
+        "Z": 0.12,
+        "X": -0.13
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": -180,
+        "Yaw": 0,
+        "Pitch": 0
+      }
+    },
+    {
+      "SystemId": "Fire_Green",
+      "TargetEntityPart": "Self",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": 0.2,
+        "Z": 0.12,
+        "X": 0.2
+      },
+      "TargetNodeName": "Socket3"
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.32,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 1.2,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.6,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 270
+      }
+    },
+    {
+      "SystemId": "Fire_Green",
+      "TargetEntityPart": "Self",
+      "Scale": 0.45,
+      "PositionOffset": {
+        "Y": -0.2,
+        "Z": 0.12,
+        "X": -0.13
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": -180,
+        "Yaw": 0,
+        "Pitch": 0
+      }
+    },
+    {
+      "SystemId": "Fire_Green",
+      "TargetEntityPart": "Self",
+      "Scale": 0.45,
+      "PositionOffset": {
+        "Y": 0.2,
+        "Z": 0.12,
+        "X": 0.2
+      },
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "RotationOffset": {
+        "Pitch": 90,
+        "Roll": 0,
+        "Yaw": 90
+      },
+      "TargetNodeName": "Handle2",
+      "TrailId": "Wind_Diamond_Sword",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 90,
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Handle2",
+      "TrailId": "Voidstone_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Variant": true
+}

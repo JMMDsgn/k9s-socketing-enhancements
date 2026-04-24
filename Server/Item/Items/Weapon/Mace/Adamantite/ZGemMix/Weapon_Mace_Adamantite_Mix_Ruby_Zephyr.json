@@ -1,0 +1,299 @@
+{
+  "Parent": "Template_Weapon_Mace",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Mace_Adamantite_Mix_Ruby_Zephyr.name",
+    "Description": "server.items.Weapon_Mix_Ruby_Zephyr.description"
+  },
+  "Model": "Items/Weapon/Mace/Adamantite/Adamantite_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Mace/Adamantite/ZGemMix/Adamantite_Texture_Mix_Ruby_Zephyr.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Mace_Adamantite_Mix_Ruby_Zephyr.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Mace_Adamantite_Ruby",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Zephyr",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Maces"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Up_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 72
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 72
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Up_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 72
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Groundslam_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Signature_Groundslam_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 153
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 15.56,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 180,
+  "DurabilityLossOnHit": 0.5,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -47,
+      -47
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0.1,
+        "X": 0,
+        "Z": 0.15
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Yaw": 0,
+        "Pitch": 0
+      }
+    },
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": -0.13,
+        "Z": 0.12,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 0,
+        "Pitch": 180
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.35,
+      "PositionOffset": {
+        "Y": 0.1,
+        "X": 0,
+        "Z": 0.15
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Yaw": 0,
+        "Pitch": 0
+      }
+    },
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": -0.13,
+        "Z": 0.12,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 0,
+        "Pitch": 180
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": -45,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Handle2",
+      "TrailId": "Ruby_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Handle2",
+      "TrailId": "Wind_Zephyr",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Variant": true,
+  "Interactions": {
+    "Primary": "Root_Weapon_Mace_Primary_Zephyr"
+  }
+}

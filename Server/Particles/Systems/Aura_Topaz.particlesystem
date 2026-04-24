@@ -1,0 +1,34 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Square_Erode_Topaz",
+      "TotalSpawners": -1,
+      "MaxConcurrent": 1,
+      "SpawnRate": {
+        "Min": 1.0,
+        "Max": 1.0
+      }
+    },
+    {
+      "SpawnerId": "Glow_Front_Topaz",
+      "SpawnRate": {
+        "Min": 1.0,
+        "Max": 1.0
+      },
+      "MaxConcurrent": 1,
+      "TotalSpawners": -1
+    },
+    {
+      "SpawnerId": "Glow_Front_Small_Topaz",
+      "SpawnRate": {
+        "Min": 1.0,
+        "Max": 1.0
+      },
+      "TotalSpawners": -1,
+      "MaxConcurrent": 1
+    }
+  ],
+  "CullDistance": 100.0,
+  "BoundingRadius": 10.0,
+  "IsImportant": true
+}

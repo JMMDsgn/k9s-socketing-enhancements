@@ -1,0 +1,115 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Thorium_Legs_Ruby.name",
+    "Description": "server.items.Armor_Ruby.description"
+  },
+  "Parent": "Armor_Iron_Legs",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Thorium_Legs_Ruby.png",
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -21.6
+    ]
+  },
+  "Model": "Items/Armor/Thorium/Legs.blockymodel",
+  "Texture": "Items/Armor/Thorium/Ruby/Legs_Socket_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Thorium_Legs",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Ruby",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Pants",
+      "Shoes"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.0896,
+          "CalculationType": "Multiplicative"
+        },
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 0.02
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.0896,
+          "CalculationType": "Multiplicative"
+        },
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 0.02
+        }
+      ],
+      "Poison": [
+        {
+          "Amount": 0.21,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 17,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 120,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Thorium",
+      "Socketed"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Variant": true,
+  "Light": {
+    "Color": "#411",
+    "Radius": 0
+  }
+}

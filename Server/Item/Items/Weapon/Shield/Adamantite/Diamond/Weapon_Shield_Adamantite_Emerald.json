@@ -1,0 +1,114 @@
+{
+  "Parent": "Template_Weapon_Shield",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Shield_Adamantite_Emerald.name",
+    "Description": "server.items.Weapon_Shield_Emerald.description"
+  },
+  "Model": "Items/Weapon/Shield/Adamantite/Adamantite_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Shield/Adamantite/Emerald/Adamantite_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Shield_Adamantite_Emerald.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Shield_Adamantite",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Emerald",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Shields"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "$Comment": "Actively guarding with the weapon",
+          "Parent": "Weapon_Shield_Secondary_Guard_Wield_Quartz",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Shield_T2_Raise",
+            "LocalSoundEventId": "SFX_Shield_T2_Raise_Local"
+          },
+          "StaminaCost": {
+            "Value": 12,
+            "CostType": "Damage"
+          },
+          "BlockedEffects": {
+            "WorldSoundEventId": "SFX_Shield_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Bash_Damage": {
+      "Interactions": [
+        {
+          "$Comment": "Damage & Effects on a successful hit with the guard shove attack",
+          "Parent": "Weapon_Shield_Secondary_Guard_Bash_Damage_Emerald",
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Shield_T2_Impact",
+            "LocalSoundEventId": "SFX_Shield_T2_Impact"
+          }
+        }
+      ]
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.37,
+    "Rotation": [
+      315,
+      270,
+      0
+    ],
+    "Translation": [
+      -30,
+      -30
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.5,
+        "Z": 0.05
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.5,
+        "Z": 0.05
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    }
+  ],
+  "Variant": true
+}

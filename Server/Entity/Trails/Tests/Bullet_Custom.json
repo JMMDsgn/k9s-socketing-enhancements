@@ -1,0 +1,16 @@
+{
+  "TexturePath": "Trails/Swipe.png",
+  "LifeSpan": 5,
+  "Roll": 0,
+  "Start": {
+    "Color": "#b0f7fe67",
+    "Width": 0.6
+  },
+  "End": {
+    "Color": "#ced0fe40",
+    "Width": 0.1
+  },
+  "LightInfluence": 1,
+  "Smooth": true,
+  "RenderMode": "BlendAdd"
+}

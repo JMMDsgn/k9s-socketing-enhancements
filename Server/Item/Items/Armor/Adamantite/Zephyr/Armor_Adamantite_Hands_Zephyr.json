@@ -1,0 +1,113 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Adamantite_Hands_Zephyr.name",
+    "Description": "server.items.Armor_Zephyr.description"
+  },
+  "Parent": "Armor_Iron_Hands",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Adamantite_Hands_Zephyr.png",
+  "IconProperties": {
+    "Scale": 0.645,
+    "Rotation": [
+      21.94,
+      45.565,
+      22.5
+    ],
+    "Translation": [
+      0.7,
+      -2.3
+    ]
+  },
+  "Model": "Items/Armor/Adamantite/Hands_Socketed.blockymodel",
+  "Texture": "Items/Armor/Adamantite/Zephyr/Hands_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Adamantite_Hands",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Zephyr",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Hands",
+    "BaseDamageResistance": 0,
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.064,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.064,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 11,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Light": [
+        {
+          "Amount": 0.03,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Adamantite",
+      "Socketed"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Light": {
+    "Color": "#134",
+    "Radius": 0
+  },
+  "Variant": true,
+  "Interactions": {
+    "Equipped": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Armor_Zephyr_Swiftness"
+        }
+      ]
+    }
+  }
+}

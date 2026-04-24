@@ -1,0 +1,198 @@
+{
+  "Interactions": [
+    {
+      "Type": "BlockCondition",
+      "Matchers": [
+        {
+          "Block": {
+            "Id": "Ore_Adamantite_Magma"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Cobalt_Shale"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Cobalt_Slate"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Copper_Sandstone"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Copper_Shale"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Copper_Stone"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Gold_Basalt"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Gold_Calcite"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Gold_Sandstone"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Gold_Shale"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Gold_Stone"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Gold_Volcanic"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Iron_Basalt"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Iron_Sandstone"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Iron_Shale"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Iron_Slate"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Iron_Stone"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Iron_Volcanic"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Mithril_Stone"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Silver_Basalt"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Silver_Sandstone"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Silver_Shale"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Silver_Slate"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Silver_Stone"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Silver_Volcanic"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Thorium_Mud"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Ore_Thorium_Sandstone"
+          }
+        }
+      ],
+      "Next": {
+        "Type": "RunOnBlockTypes",
+        "BlockSets": [
+          "Ores",
+          "Ore_Gold"
+        ],
+        "Range": 5,
+        "MaxCount": 20,
+        "Interactions": {
+          "Type": "BreakBlock",
+          "MatchTool": false,
+          "UseLatestTarget": false,
+          "Interactions": [
+            {
+              "Type": "BreakBlock",
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "Fire_Green_Void_Damage",
+                    "TargetNodeName": "Socket",
+                    "DetachedFromModel": true,
+                    "PositionOffset": {
+                      "Z": 1,
+                      "X": 0
+                    }
+                  }
+                ],
+                "ItemPlayerAnimationsId": "Pickaxe",
+                "ItemAnimationId": "Mine",
+                "ClearAnimationOnFinish": true,
+                "WorldSoundEventId": "SFX_Void_Attack_Lifesteal",
+                "FirstPersonParticles": [
+                  {
+                    "SystemId": "Fire_Green_Void_Damage",
+                    "TargetNodeName": "Socket",
+                    "DetachedFromModel": false,
+                    "PositionOffset": {
+                      "Z": 0.5,
+                      "X": 1.5,
+                      "Y": 0
+                    }
+                  }
+                ]
+              },
+              "Failed": "Pickaxe_Mine",
+              "RunTime": 0.5
+            }
+          ]
+        },
+        "Effects": {},
+        "RunTime": 0.01
+      },
+      "Failed": "Pickaxe_Attack",
+      "UseLatestTarget": false
+    }
+  ]
+}

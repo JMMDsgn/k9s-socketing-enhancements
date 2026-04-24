@@ -1,0 +1,28 @@
+{
+  "Input": [
+    {
+      "ItemId": "Weapon_Sword_Thorium_Ruby",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Crystal_Blank",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "Jewel_Ruby",
+      "Quantity": 1
+    },
+    {
+      "ItemId": "Weapon_Sword_Thorium"
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

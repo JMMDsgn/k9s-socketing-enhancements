@@ -1,0 +1,307 @@
+{
+  "Parent": "Template_Weapon_Sword",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Sword_Thorium_Mix_Diamond_Voidstone.name",
+    "Description": "server.items.Weapon_Mix_Diamond_Voidstone.description"
+  },
+  "Model": "Items/Weapon/Sword/Thorium/Thorium.blockymodel",
+  "Texture": "Items/Weapon/Sword/Thorium/ZGemMix/Thorium_Texture_Mix_Diamond_Voidstone.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Sword_Thorium_Zmix_Diamond_Voidstone.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 12
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 12
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 22
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 32
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T2"
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 23
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T3"
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 70
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T3"
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.01,
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -33,
+      -33
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 20,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Variant": true,
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.35,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 1,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SystemId": "Fire_Green",
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Yaw": 0,
+        "Pitch": 90
+      },
+      "PositionOffset": {
+        "Z": 0
+      },
+      "Scale": 0.4
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Wind_Diamond_Sword",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.15,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Voidstone_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.35,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 1,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Fire_Green",
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Yaw": 0,
+        "Pitch": 0
+      },
+      "PositionOffset": {
+        "Z": 0
+      },
+      "Scale": 0.4
+    }
+  ],
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Sword_Thorium_Diamond",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Voidstone",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Swords"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  }
+}

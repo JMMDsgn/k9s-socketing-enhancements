@@ -1,0 +1,160 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Thorium_Chest_Voidstone.name",
+    "Description": "server.items.Armor_Voidstone.description"
+  },
+  "Parent": "Armor_Iron_Chest",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Thorium_Chest_Voidstone.png",
+  "IconProperties": {
+    "Scale": 0.37,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -6
+    ]
+  },
+  "Model": "Items/Armor/Thorium/Chest_Socket.blockymodel",
+  "Texture": "Items/Armor/Thorium/Voidstone/Chest_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Thorium_Chest",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Voidstone",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.1152,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.1152,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Poison": [
+        {
+          "Amount": 0.27,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 22,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 120,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Thorium",
+      "Socketed"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "Variant": true,
+  "Interactions": {
+    "Equipped": {
+      "Cooldown": {
+        "Cooldown": 2.5
+      },
+      "Interactions": [
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "AOECircle",
+            "Range": 3,
+            "Offset": {
+              "Y": -1.5
+            }
+          },
+          "HitEntity": {
+            "Interactions": [
+              {
+                "Type": "DamageEntity",
+                "DamageCalculator": {
+                  "BaseDamage": {
+                    "Elemental": 2
+                  },
+                  "RandomPercentageModifier": 0.2
+                },
+                "DamageEffects": {
+                  "WorldSoundEventId": "SFX_Void_Attack_Lifesteal",
+                  "ModelParticles": [
+                    {
+                      "SystemId": "Fire_Green_Void_Damage",
+                      "TargetNodeName": "Chest"
+                    }
+                  ]
+                },
+                "Next": {
+                  "Type": "ChangeStat",
+                  "StatModifiers": {
+                    "Health": 2
+                  }
+                }
+              },
+              {
+                "Type": "Simple",
+                "RunTime": 0.5
+              }
+            ]
+          },
+          "IgnoreOwner": true,
+          "Failed": {
+            "Type": "Simple",
+            "RunTime": 0.5
+          }
+        }
+      ]
+    }
+  },
+  "Light": {
+    "Color": "#214",
+    "Radius": 0
+  }
+}

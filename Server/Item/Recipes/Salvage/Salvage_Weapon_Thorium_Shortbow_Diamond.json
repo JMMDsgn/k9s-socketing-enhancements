@@ -1,0 +1,28 @@
+{
+  "Input": [
+    {
+      "ItemId": "Weapon_Shortbow_Thorium_Diamond",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Crystal_Blank",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "Weapon_Shortbow_Thorium"
+    },
+    {
+      "ItemId": "Jewel_Diamond",
+      "Quantity": 1
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

@@ -1,0 +1,222 @@
+{
+  "Interactions": [
+    {
+      "Type": "BlockCondition",
+      "Next": {
+        "Type": "RunOnBlockTypes",
+        "Range": 5,
+        "MaxCount": 10,
+        "Interactions": {
+          "Type": "BreakBlock",
+          "MatchTool": false,
+          "UseLatestTarget": false,
+          "Interactions": [
+            {
+              "Type": "BreakBlock",
+              "Effects": {
+                "Particles": [
+                  {
+                    "SystemId": "Fire_Green_Void_Damage",
+                    "TargetNodeName": "Socket",
+                    "DetachedFromModel": true,
+                    "PositionOffset": {
+                      "Z": 1,
+                      "X": 0
+                    }
+                  }
+                ],
+                "ItemPlayerAnimationsId": "Hatchet",
+                "ItemAnimationId": "Chop",
+                "ClearAnimationOnFinish": true,
+                "WorldSoundEventId": "SFX_Void_Attack_Lifesteal",
+                "FirstPersonParticles": [
+                  {
+                    "SystemId": "Fire_Green_Void_Damage",
+                    "TargetNodeName": "Socket",
+                    "DetachedFromModel": false,
+                    "PositionOffset": {
+                      "Z": 0.5,
+                      "X": 1.5,
+                      "Y": 0
+                    }
+                  }
+                ]
+              },
+              "RunTime": 0.5,
+              "Failed": "Hatchet_Chop"
+            }
+          ]
+        },
+        "Effects": {},
+        "RunTime": 0,
+        "BlockSets": [
+          "Wood"
+        ]
+      },
+      "Failed": "Hatchet_Attack",
+      "Matchers": [
+        {
+          "Block": {
+            "Id": "Wood_Amber_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Apple_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Ash_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Aspen_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Azure_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Bamboo_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Banyan_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Beech_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Birch_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Bottletree_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Burnt_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Camphor_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Cedar_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Crystal_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Dry_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Fig_Blue_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Fir_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Fire_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Gumboab_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Ice_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Jungle_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Maple_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Oak_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Palm_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Palo_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Poisoned_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Redwood_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Sallow_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Spiral_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Stormbark_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Windwillow_Trunk"
+          }
+        },
+        {
+          "Block": {
+            "Id": "Wood_Wisteria_Wild_Trunk"
+          }
+        }
+      ],
+      "UseLatestTarget": true
+    }
+  ]
+}

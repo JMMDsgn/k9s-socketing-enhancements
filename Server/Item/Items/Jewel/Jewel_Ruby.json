@@ -1,0 +1,87 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Jewel_Ruby.name",
+    "Description": "server.items.Jewel_Ruby.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Jewel_Ruby.png",
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/Jewels/Jewel_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Jewels/Jewel_Ruby.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Crystal",
+    "Light": {
+      "Color": "#411",
+      "Radius": 0
+    }
+  },
+  "PlayerAnimationsId": "Item",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  },
+  "ItemLevel": 50,
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      34,
+      33,
+      33
+    ],
+    "Translation": [
+      1,
+      -5
+    ]
+  },
+  "Quality": "Rare",
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Particles": [
+    {
+      "SystemId": "Fire_Pit",
+      "Scale": 0.1,
+      "Color": "#d2731d",
+      "PositionOffset": {
+        "Y": -0.05
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Jewel"
+    }
+  ],
+  "MaxStack": 1,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Crystal_Red",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Rock_Gem_Ruby",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Categories": [
+          "Arcane_Jewelworking"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 3,
+    "OutputQuantity": 1
+  }
+}

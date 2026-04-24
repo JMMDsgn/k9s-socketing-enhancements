@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OreGenConfig version="1">
+
+  <Ore id="K9_Quartz_Z4_0mHKeIo1JB" enabled="true">
+    <Spawn name="Quartz_Zone4" chancePerChunk="0.50" yMin="30" yMax="78" veinsMin="1" veinsMax="5" veinSizeMin="1" veinSizeMax="1" crustOnly="false" crustDepth="0" excludeSurface="false">
+      <ZonePrefix include="Zone4_"/>
+      <Variant oreBlock="Rock_Gem_Quartz" chance="1">
+        <Host>Rock_Quartzite</Host>
+      </Variant>
+    </Spawn>
+
+  </Ore>
+
+  <Ore id="K9_Zephyr_Z2_LnK2zkpTzK" enabled="true">
+    <Spawn name="Zephyr_Z2" chancePerChunk="0.35" yMin="1" yMax="60" veinsMin="1" veinsMax="5" veinSizeMin="1" veinSizeMax="1" crustOnly="false" crustDepth="0" excludeSurface="false">
+      <ZonePrefix include="Zone2_"/>
+      <Variant oreBlock="Rock_Gem_Zephyr" chance="0.33">
+        <Host>Rock_Sandstone_Red</Host>
+      </Variant>
+    </Spawn>
+
+  </Ore>
+
+  <Ore id="K9_Voidstone_Z3_ziKpwKohOP" enabled="true">
+    <Spawn name="K9_Voidstone_Z3" chancePerChunk="0.50" yMin="1" yMax="100" veinsMin="1" veinsMax="5" veinSizeMin="1" veinSizeMax="1" crustOnly="false" crustDepth="0" excludeSurface="false">
+      <ZonePrefix include="Zone3_"/>
+      <Variant oreBlock="Rock_Gem_Voidstone" chance="1.0">
+        <Host>Rock_Volcanic</Host>
+        <Host>Rock_Slate</Host>
+      </Variant>
+    </Spawn>
+
+  </Ore>
+
+</OreGenConfig>

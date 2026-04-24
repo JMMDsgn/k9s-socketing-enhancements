@@ -1,0 +1,865 @@
+items.Rock_Gem_Quartz.name=Quartz
+items.Ingredient_Crystal_Blank.name=Essence Crystal
+	items.Ingredient_Crystal_Blank.description=<i>Something lingers inside.</i>\n \nA resource found across many cultures, though its purpose remains unknown.
+
+items.Jewel_Diamond.name=Divinity Jewel
+	items.Jewel_Diamond.description=<b><color is="#ffffff">Grants the <color is="#96f9ff">Divinity</color> effects to socketed gear.</color></b>\n<i>It feels as if the power of Gaia is contained within.</i>
+items.Jewel_Emerald.name=Sturdy Jewel
+	items.Jewel_Emerald.description=<b><color is="#ffffff">Grants the <color is="#42c217">Browny</color> effects to socketed gear.</color></b>\n<i>This gem seems to contain the essence of earth.</i>
+items.Jewel_Ruby.name=Power Jewel
+	items.Jewel_Ruby.description=<b><color is="#ffffff">Grants the <color is="#ff2717">Powerful</color> effects to socketed gear.</color></b>\n<i>This gem seems to contain the essence of fire.</i>
+items.Jewel_Sapphire.name=Intuition Jewel
+	items.Jewel_Sapphire.description=<b><color is="#ffffff">Grants the <color is="#326be6">Intuitive</color> effects to socketed gear.</color></b>\n<i>This gem seems to contain the essence of water.</i>
+items.Jewel_Topaz.name=Strike Jewel
+	items.Jewel_Topaz.description=<b><color is="#ffffff">Grants the <color is="#dec310">Striking</color> effects to socketed gear.</color></b>\n<i>This gem seems to contain the essence of lightning.</i>
+items.Jewel_Voidstone.name=Void Jewel
+	items.Jewel_Voidstone.description=<b><color is="#ffffff">Grants the <color is="#a217ff">Draining</color> effects to socketed gear.</color></b>\n<i>It feels like the power of an evil entity is contained within.</i>
+items.Jewel_Zephyr.name=Swiftness Jewel
+	items.Jewel_Zephyr.description=<b><color is="#ffffff">Grants the <color is="#10b8de">Swifty</color> effects to socketed gear.</color></b>\n<i>This gem seems to contain the essence of wind.</i>
+items.Jewel_Quartz.name=Life Jewel
+	items.Jewel_Quartz.description=<b><color is="#ffffff">Grants the <color is="#ffd2f7">Vigorous</color> effects to socketed gear.</color></b>\n<i>This gem seems to contain the essence of life.</i>
+
+
+items.Bench_Socketing.name=Jeweler's Forge
+items.Bench_Socketing.description=Used to upgrade gear by socketing gems on them.\n \n<i>Arcanists once worked with jewelers to create equipment imbued with the powers of the elements, forging elite soldiers. Since then, no one has been able to harness the power of gems... Until now</i>
+benchCategories.gemcrafting=Essence Jewelry
+benchCategories.socketingtools=Tools
+benchCategories.socketingarmor=Armor
+benchCategories.socketingshields=Shields
+benchCategories.socketingswords=Swords
+benchCategories.socketingmaces=Maces
+benchCategories.socketingbattleaxes=Battleaxes
+benchCategories.socketingdaggers=Daggers
+benchCategories.socketingbows=Bows
+
+
+items.Weapon_Mix_Diamond_Emerald.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>\n<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>
+items.Weapon_Mix_Diamond_Ruby.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>\n<b><color is="#f22213">Destruction:</color></b><i><color is="#ffffff"> Increases physical and projectile damage.</color></i>
+items.Weapon_Mix_Diamond_Sapphire.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>\n<b><color is="#326be6">Competence:</color></b><i><color is="#ffffff"> Increases the amount of signature energy generated per hit.</color></i>
+items.Weapon_Mix_Diamond_Topaz.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>\n<b><color is="#dec310">Spike:</color></b><i><color is="#ffffff"> Greatly increases the damage of charged attacks.</color></i>
+items.Weapon_Mix_Diamond_Voidstone.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>\n<b><color is="#a217ff">Wrath:</color></b><i><color is="#ffffff"> Partially drains life from enemies on hit.</color></i>
+items.Weapon_Mix_Diamond_Zephyr.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>\n<b><color is="#10b8de">Celerity:</color></b><i><color is="#ffffff"> Increases basic attack speed.</color></i>
+items.Weapon_Mix_Diamond_Quartz.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>\n<b><color is="#ffd2f7">Restful:</color></b><i><color is="#ffffff"> While held, grants slight regeneration.</color></i>
+	items.Weapon_Ranged_Mix_Diamond_Zephyr.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>\n<b><color is="#10b8de">Sling:</color></b><i><color is="#ffffff"> Increases projectile speed.</color></i>
+
+items.Weapon_Mix_Emerald_Ruby.description=<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>\n<b><color is="#f22213">Destruction:</color></b><i><color is="#ffffff"> Increases physical and projectile damage.</color></i>
+items.Weapon_Mix_Emerald_Sapphire.description=<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>\n<b><color is="#326be6">Competence:</color></b><i><color is="#ffffff"> Increases the amount of signature energy generated per hit.</color></i>
+items.Weapon_Mix_Emerald_Topaz.description=<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>\n<b><color is="#dec310">Spike:</color></b><i><color is="#ffffff"> Greatly increases the damage of charged attacks.</color></i>
+items.Weapon_Mix_Emerald_Voidstone.description=<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>\n<b><color is="#a217ff">Wrath:</color></b><i><color is="#ffffff"> Partially drains life from enemies on hit.</color></i>
+items.Weapon_Mix_Emerald_Zephyr.description=<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>\n<b><color is="#10b8de">Celerity:</color></b><i><color is="#ffffff"> Increases basic attack speed.</color></i>
+items.Weapon_Mix_Emerald_Quartz.description=<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>\n<b><color is="#ffd2f7">Restful:</color></b><i><color is="#ffffff"> While held, grants slight regeneration.</color></i>
+	items.Weapon_Ranged_Mix_Emerald_Zephyr.description=<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>\n<b><color is="#10b8de">Sling:</color></b><i><color is="#ffffff"> Increases projectile speed.</color></i>
+
+items.Weapon_Mix_Ruby_Sapphire.description=<b><color is="#f22213">Destruction:</color></b><i><color is="#ffffff"> Increases physical and projectile damage.</color></i>\n<b><color is="#326be6">Competence:</color></b><i><color is="#ffffff"> Increases the amount of signature energy generated per hit.</color></i>
+items.Weapon_Mix_Ruby_Topaz.description=<b><color is="#f22213">Destruction:</color></b><i><color is="#ffffff"> Increases physical and projectile damage.</color></i>\n<b><color is="#dec310">Spike:</color></b><i><color is="#ffffff"> Greatly increases the damage of charged attacks.</color></i>
+items.Weapon_Mix_Ruby_Voidstone.description=<b><color is="#f22213">Destruction:</color></b><i><color is="#ffffff"> Increases physical and projectile damage.</color></i>\n<b><color is="#a217ff">Wrath:</color></b><i><color is="#ffffff"> Partially drains life from enemies on hit.</color></i>
+items.Weapon_Mix_Ruby_Zephyr.description=<b><color is="#f22213">Destruction:</color></b><i><color is="#ffffff"> Increases physical and projectile damage.</color></i>\n<b><color is="#10b8de">Celerity:</color></b><i><color is="#ffffff"> Increases basic attack speed.</color></i>
+items.Weapon_Mix_Ruby_Quartz.description=<b><color is="#f22213">Destruction:</color></b><i><color is="#ffffff"> Increases physical and projectile damage.</color></i>\n<b><color is="#ffd2f7">Restful:</color></b><i><color is="#ffffff"> While held, grants slight regeneration.</color></i>
+	items.Weapon_Ranged_Mix_Ruby_Zephyr.description=<b><color is="#f22213">Destruction:</color></b><i><color is="#ffffff"> Increases physical and projectile damage.</color></i>\n<b><color is="#10b8de">Sling:</color></b><i><color is="#ffffff"> Increases projectile speed.</color></i>
+
+items.Weapon_Mix_Sapphire_Topaz.description=<b><color is="#326be6">Competence:</color></b><i><color is="#ffffff"> Increases the amount of signature energy generated per hit.</color></i>\n<b><color is="#dec310">Spike:</color></b><i><color is="#ffffff"> Greatly increases the damage of charged attacks.</color></i>
+items.Weapon_Mix_Sapphire_Voidstone.description=<b><color is="#326be6">Competence:</color></b><i><color is="#ffffff"> Increases the amount of signature energy generated per hit.</color></i>\n<b><color is="#a217ff">Wrath:</color></b><i><color is="#ffffff"> Partially drains life from enemies on hit.</color></i>
+items.Weapon_Mix_Sapphire_Zephyr.description=<b><color is="#326be6">Competence:</color></b><i><color is="#ffffff"> Increases the amount of signature energy generated per hit.</color></i>\n<b><color is="#10b8de">Celerity:</color></b><i><color is="#ffffff"> Increases basic attack speed.</color></i>
+items.Weapon_Mix_Sapphire_Quartz.description=<b><color is="#326be6">Competence:</color></b><i><color is="#ffffff"> Increases the amount of signature energy generated per hit.</color></i>\n<b><color is="#ffd2f7">Restful:</color></b><i><color is="#ffffff"> While held, grants slight regeneration.</color></i>
+	items.Weapon_Ranged_Mix_Sapphire_Zephyr.description=<b><color is="#326be6">Competence:</color></b><i><color is="#ffffff"> Increases the amount of signature energy generated per hit.</color></i>\n<b><color is="#10b8de">Sling:</color></b><i><color is="#ffffff"> Increases projectile speed.</color></i>
+
+items.Weapon_Mix_Topaz_Voidstone.description=<b><color is="#dec310">Spike:</color></b><i><color is="#ffffff"> Greatly increases the damage of charged attacks.</color></i>\n<b><color is="#a217ff">Wrath:</color></b><i><color is="#ffffff"> Partially drains life from enemies on hit.</color></i>
+items.Weapon_Mix_Topaz_Zephyr.description=<b><color is="#dec310">Spike:</color></b><i><color is="#ffffff"> Greatly increases the damage of charged attacks.</color></i>\n<b><color is="#10b8de">Celerity:</color></b><i><color is="#ffffff"> Increases basic attack speed.</color></i>
+items.Weapon_Mix_Topaz_Quartz.description=<b><color is="#dec310">Spike:</color></b><i><color is="#ffffff"> Greatly increases the damage of charged attacks.</color></i>\n<b><color is="#ffd2f7">Restful:</color></b><i><color is="#ffffff"> While held, grants slight regeneration.</color></i>
+	items.Weapon_Ranged_Mix_Topaz_Zephyr.description=<b><color is="#dec310">Spike:</color></b><i><color is="#ffffff"> Greatly increases the damage of charged attacks.</color></i>\n<b><color is="#10b8de">Sling:</color></b><i><color is="#ffffff"> Increases projectile speed.</color></i>
+
+items.Weapon_Mix_Voidstone_Zephyr.description=<b><color is="#a217ff">Wrath:</color></b><i><color is="#ffffff"> Partially drains life from enemies on hit.</color></i>\n<b><color is="#10b8de">Celerity:</color></b><i><color is="#ffffff"> Increases basic attack speed.</color></i>
+items.Weapon_Mix_Voidstone_Quartz.description=<b><color is="#a217ff">Wrath:</color></b><i><color is="#ffffff"> Partially drains life from enemies on hit.</color></i>\n<b><color is="#ffd2f7">Restful:</color></b><i><color is="#ffffff"> While held, grants slight regeneration.</color></i>
+	items.Weapon_Ranged_Mix_Voidstone_Zephyr.description=<b><color is="#a217ff">Wrath:</color></b><i><color is="#ffffff"> Partially drains life from enemies on hit.</color></i>\n<b><color is="#10b8de">Sling:</color></b><i><color is="#ffffff"> Increases projectile speed.</color></i>
+
+items.Weapon_Mix_Zephyr_Quartz.description=<b><color is="#10b8de">Celerity:</color></b><i><color is="#ffffff"> Increases basic attack speed.</color></i>\n<b><color is="#ffd2f7">Restful:</color></b><i><color is="#ffffff"> While held, grants slight regeneration.</color></i>
+	items.Weapon_Ranged_Mix_Zephyr_Quartz.description=<b><color is="#10b8de">Sling:</color></b><i><color is="#ffffff"> Increases projectile speed.</color></i>\n<b><color is="#ffd2f7">Restful:</color></b><i><color is="#ffffff"> While held, grants slight regeneration.</color></i>
+
+
+
+items.Armor_Thorium_Chest_Diamond.name=Divinity - Thorium Cuirass
+items.Armor_Thorium_Hands_Diamond.name=Divinity - Thorium Gauntlets
+items.Armor_Thorium_Head_Diamond.name=Divinity - Thorium Helm
+items.Armor_Thorium_Legs_Diamond.name=Divinity - Thorium Greaves
+items.Armor_Cobalt_Chest_Diamond.name=Divinity - Cobalt Cuirass
+items.Armor_Cobalt_Hands_Diamond.name=Divinity - Cobalt Gauntlets
+items.Armor_Cobalt_Head_Diamond.name=Divinity - Cobalt Helm
+items.Armor_Cobalt_Legs_Diamond.name=Divinity - Cobalt Greaves
+items.Armor_Adamantite_Chest_Diamond.name=Divinity - Adamantite Cuirass
+items.Armor_Adamantite_Hands_Diamond.name=Divinity - Adamantite Gauntlets
+items.Armor_Adamantite_Head_Diamond.name=Divinity - Adamantite Helm
+items.Armor_Adamantite_Legs_Diamond.name=Divinity - Adamantite Greaves
+	items.Armor_Diamond.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>
+
+items.Tool_Pickaxe_Thorium_Diamond.name=Divinity - Thorium Pickaxe
+items.Tool_Hatchet_Thorium_Diamond.name=Divinity - Thorium Hatchet
+items.Tool_Pickaxe_Cobalt_Diamond.name=Divinity - Cobalt Pickaxe
+items.Tool_Hatchet_Cobalt_Diamond.name=Divinity - Cobalt Hatchet
+items.Tool_Pickaxe_Adamantite_Diamond.name=Divinity - Adamantite Pickaxe
+items.Tool_Hatchet_Adamantite_Diamond.name=Divinity - Adamantite Hatchet
+	items.Tool_Diamond.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>
+
+items.Weapon_Sword_Thorium_Diamond.name=Divinity - Thorium Sword
+items.Weapon_Shortbow_Thorium_Diamond.name=Divinity - Thorium Bow
+items.Weapon_Mace_Thorium_Diamond.name=Divinity - Thorium Mace
+items.Weapon_Daggers_Thorium_Diamond.name=Divinity - Thorium Daggers
+items.Weapon_Battleaxe_Thorium_Diamond.name=Divinity - Thorium Battleaxe
+items.Weapon_Sword_Cobalt_Diamond.name=Divinity - Cobalt Sword
+items.Weapon_Shortbow_Cobalt_Diamond.name=Divinity - Cobalt Bow
+items.Weapon_Mace_Cobalt_Diamond.name=Divinity - Cobalt Mace
+items.Weapon_Daggers_Cobalt_Diamond.name=Divinity - Cobalt Daggers
+items.Weapon_Battleaxe_Cobalt_Diamond.name=Divinity - Cobalt Battleaxe
+items.Weapon_Sword_Adamantite_Diamond.name=Divinity - Adamantite Sword
+items.Weapon_Shortbow_Adamantite_Diamond.name=Divinity - Adamantite Bow
+items.Weapon_Mace_Adamantite_Diamond.name=Divinity - Adamantite Mace
+items.Weapon_Daggers_Adamantite_Diamond.name=Divinity - Adamantite Daggers
+items.Weapon_Battleaxe_Adamantite_Diamond.name=Divinity - Adamantite Battleaxe
+	items.Weapon_Diamond.description=<b><color is="#96f9ff">Everlasting:</color></b><i><color is="#ffffff"> Greatly reduces durability loss, but will not last forever.</color></i>
+
+
+items.Armor_Thorium_Chest_Emerald.name=Browny - Thorium Cuirass
+items.Armor_Thorium_Hands_Emerald.name=Browny - Thorium Gauntlets
+items.Armor_Thorium_Head_Emerald.name=Browny - Thorium Helm
+items.Armor_Thorium_Legs_Emerald.name=Browny - Thorium Greaves
+items.Armor_Cobalt_Chest_Emerald.name=Browny - Cobalt Cuirass
+items.Armor_Cobalt_Hands_Emerald.name=Browny - Cobalt Gauntlets
+items.Armor_Cobalt_Head_Emerald.name=Browny - Cobalt Helm
+items.Armor_Cobalt_Legs_Emerald.name=Browny - Cobalt Greaves
+items.Armor_Adamantite_Chest_Emerald.name=Browny - Adamantite Cuirass
+items.Armor_Adamantite_Hands_Emerald.name=Browny - Adamantite Gauntlets
+items.Armor_Adamantite_Head_Emerald.name=Browny - Adamantite Helm
+items.Armor_Adamantite_Legs_Emerald.name=Browny - Adamantite Greaves
+	items.Armor_Emerald.description=<b><color is="#42c217">Tenacity:</color></b><i><color is="#ffffff"> Reduces total knockback received by 25%.</color></i>
+
+items.Tool_Pickaxe_Thorium_Emerald.name=Browny - Thorium Pickaxe
+items.Tool_Hatchet_Thorium_Emerald.name=Browny - Thorium Hatchet
+items.Tool_Pickaxe_Cobalt_Emerald.name=Browny - Cobalt Pickaxe
+items.Tool_Hatchet_Cobalt_Emerald.name=Browny - Cobalt Hatchet
+items.Tool_Pickaxe_Adamantite_Emerald.name=Browny - Adamantite Pickaxe
+items.Tool_Hatchet_Adamantite_Emerald.name=Browny - Adamantite Hatchet
+	items.Tool_Emerald.description=<b><color is="#42c217">Copious:</color></b><i><color is="#ffffff"> Breaks multiple blocks at once.</color></i>
+
+items.Weapon_Shield_Thorium_Emerald.name=Browny - Thorium Shield
+items.Weapon_Shield_Cobalt_Emerald.name=Browny - Cobalt Shield
+items.Weapon_Shield_Adamantite_Emerald.name=Browny - Adamantite Shield
+	items.Weapon_Shield_Emerald.description=<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>
+
+items.Weapon_Sword_Thorium_Emerald.name=Browny - Thorium Sword
+items.Weapon_Shortbow_Thorium_Emerald.name=Browny - Thorium Bow
+items.Weapon_Mace_Thorium_Emerald.name=Browny - Thorium Mace
+items.Weapon_Daggers_Thorium_Emerald.name=Browny - Thorium Daggers
+items.Weapon_Battleaxe_Thorium_Emerald.name=Browny - Thorium Battleaxe
+items.Weapon_Sword_Cobalt_Emerald.name=Browny - Cobalt Sword
+items.Weapon_Shortbow_Cobalt_Emerald.name=Browny - Cobalt Bow
+items.Weapon_Mace_Cobalt_Emerald.name=Browny - Cobalt Mace
+items.Weapon_Daggers_Cobalt_Emerald.name=Browny - Cobalt Daggers
+items.Weapon_Battleaxe_Cobalt_Emerald.name=Browny - Cobalt Battleaxe
+items.Weapon_Sword_Adamantite_Emerald.name=Browny - Adamantite Sword
+items.Weapon_Shortbow_Adamantite_Emerald.name=Browny - Adamantite Bow
+items.Weapon_Mace_Adamantite_Emerald.name=Browny - Adamantite Mace
+items.Weapon_Daggers_Adamantite_Emerald.name=Browny - Adamantite Daggers
+items.Weapon_Battleaxe_Adamantite_Emerald.name=Browny - Adamantite Battleaxe
+	items.Weapon_Emerald.description=<b><color is="#42c217">Thrust:</color></b><i><color is="#ffffff"> Increases knockback dealt to enemies.</color></i>
+	
+
+items.Armor_Thorium_Chest_Ruby.name=Powerful - Thorium Cuirass
+items.Armor_Thorium_Hands_Ruby.name=Powerful - Thorium Gauntlets
+items.Armor_Thorium_Head_Ruby.name=Powerful - Thorium Helm
+items.Armor_Thorium_Legs_Ruby.name=Powerful - Thorium Greaves
+items.Armor_Cobalt_Chest_Ruby.name=Powerful - Cobalt Cuirass
+items.Armor_Cobalt_Hands_Ruby.name=Powerful - Cobalt Gauntlets
+items.Armor_Cobalt_Head_Ruby.name=Powerful - Cobalt Helm
+items.Armor_Cobalt_Legs_Ruby.name=Powerful - Cobalt Greaves
+items.Armor_Adamantite_Chest_Ruby.name=Powerful - Adamantite Cuirass
+items.Armor_Adamantite_Hands_Ruby.name=Powerful - Adamantite Gauntlets
+items.Armor_Adamantite_Head_Ruby.name=Powerful - Adamantite Helm
+items.Armor_Adamantite_Legs_Ruby.name=Powerful - Adamantite Greaves
+	items.Armor_Ruby.description=<b><color is="#f22213">Fortification:</color></b><i><color is="#ffffff"> Increases physical and projectile resistance.</color></i>
+
+items.Tool_Pickaxe_Thorium_Ruby.name=Powerful - Thorium Pickaxe
+items.Tool_Hatchet_Thorium_Ruby.name=Powerful - Thorium Hatchet
+items.Tool_Pickaxe_Cobalt_Ruby.name=Powerful - Cobalt Pickaxe
+items.Tool_Hatchet_Cobalt_Ruby.name=Powerful - Cobalt Hatchet
+items.Tool_Pickaxe_Adamantite_Ruby.name=Powerful - Adamantite Pickaxe
+items.Tool_Hatchet_Adamantite_Ruby.name=Powerful - Adamantite Hatchet
+	items.Tool_Ruby.description=<b><color is="#f22213">Dexterity:</color></b><i><color is="#ffffff"> Increases resource gathering speed.</color></i>
+
+items.Weapon_Shield_Thorium_Ruby.name=Powerful - Thorium Shield
+items.Weapon_Shield_Cobalt_Ruby.name=Powerful - Cobalt Shield
+items.Weapon_Shield_Adamantite_Ruby.name=Powerful - Adamantite Shield
+	items.Weapon_Shield_Ruby.description=<b><color is="#f22213">Punch:</color></b><i><color is="#ffffff"> Deals damage when bashing.</color></i>
+
+items.Weapon_Sword_Thorium_Ruby.name=Powerful - Thorium Sword
+items.Weapon_Shortbow_Thorium_Ruby.name=Powerful - Thorium Bow
+items.Weapon_Mace_Thorium_Ruby.name=Powerful - Thorium Mace
+items.Weapon_Daggers_Thorium_Ruby.name=Powerful - Thorium Daggers
+items.Weapon_Battleaxe_Thorium_Ruby.name=Powerful - Thorium Battleaxe
+items.Weapon_Sword_Cobalt_Ruby.name=Powerful - Cobalt Sword
+items.Weapon_Shortbow_Cobalt_Ruby.name=Powerful - Cobalt Bow
+items.Weapon_Mace_Cobalt_Ruby.name=Powerful - Cobalt Mace
+items.Weapon_Daggers_Cobalt_Ruby.name=Powerful - Cobalt Daggers
+items.Weapon_Battleaxe_Cobalt_Ruby.name=Powerful - Cobalt Battleaxe
+items.Weapon_Sword_Adamantite_Ruby.name=Powerful - Adamantite Sword
+items.Weapon_Shortbow_Adamantite_Ruby.name=Powerful - Adamantite Bow
+items.Weapon_Mace_Adamantite_Ruby.name=Powerful - Adamantite Mace
+items.Weapon_Daggers_Adamantite_Ruby.name=Powerful - Adamantite Daggers
+items.Weapon_Battleaxe_Adamantite_Ruby.name=Powerful - Adamantite Battleaxe
+	items.Weapon_Ruby.description=<b><color is="#f22213">Destruction:</color></b><i><color is="#ffffff"> Increases physical and projectile damage.</color></i>
+
+
+items.Armor_Thorium_Chest_Sapphire.name=Intuitive - Thorium Cuirass
+items.Armor_Thorium_Hands_Sapphire.name=Intuitive - Thorium Gauntlets
+items.Armor_Thorium_Head_Sapphire.name=Intuitive - Thorium Helm
+items.Armor_Thorium_Legs_Sapphire.name=Intuitive - Thorium Greaves
+items.Armor_Cobalt_Chest_Sapphire.name=Intuitive - Cobalt Cuirass
+items.Armor_Cobalt_Hands_Sapphire.name=Intuitive - Cobalt Gauntlets
+items.Armor_Cobalt_Head_Sapphire.name=Intuitive - Cobalt Helm
+items.Armor_Cobalt_Legs_Sapphire.name=Intuitive - Cobalt Greaves
+items.Armor_Adamantite_Chest_Sapphire.name=Intuitive - Adamantite Cuirass
+items.Armor_Adamantite_Hands_Sapphire.name=Intuitive - Adamantite Gauntlets
+items.Armor_Adamantite_Head_Sapphire.name=Intuitive - Adamantite Helm
+items.Armor_Adamantite_Legs_Sapphire.name=Intuitive - Adamantite Greaves
+	items.Armor_Sapphire.description=<b><color is="#326be6">Lucidity:</color></b><i><color is="#ffffff"> Increases total mana.</color></i>
+
+items.Weapon_Shield_Thorium_Sapphire.name=Intuitive - Thorium Shield
+items.Weapon_Shield_Cobalt_Sapphire.name=Intuitive - Cobalt Shield
+items.Weapon_Shield_Adamantite_Sapphire.name=Intuitive - Adamantite Shield
+	items.Weapon_Shield_Sapphire.description=<b><color is="#326be6">Repose:</color></b><i><color is="#ffffff"> Blocking hits restores some mana.</color></i>
+
+items.Weapon_Sword_Thorium_Sapphire.name=Intuitive - Thorium Sword
+items.Weapon_Shortbow_Thorium_Sapphire.name=Intuitive - Thorium Bow
+items.Weapon_Mace_Thorium_Sapphire.name=Intuitive - Thorium Mace
+items.Weapon_Daggers_Thorium_Sapphire.name=Intuitive - Thorium Daggers
+items.Weapon_Battleaxe_Thorium_Sapphire.name=Intuitive - Thorium Battleaxe
+items.Weapon_Sword_Cobalt_Sapphire.name=Intuitive - Cobalt Sword
+items.Weapon_Shortbow_Cobalt_Sapphire.name=Intuitive - Cobalt Bow
+items.Weapon_Mace_Cobalt_Sapphire.name=Intuitive - Cobalt Mace
+items.Weapon_Daggers_Cobalt_Sapphire.name=Intuitive - Cobalt Daggers
+items.Weapon_Battleaxe_Cobalt_Sapphire.name=Intuitive - Cobalt Battleaxe
+items.Weapon_Sword_Adamantite_Sapphire.name=Intuitive - Adamantite Sword
+items.Weapon_Shortbow_Adamantite_Sapphire.name=Intuitive - Adamantite Bow
+items.Weapon_Mace_Adamantite_Sapphire.name=Intuitive - Adamantite Mace
+items.Weapon_Daggers_Adamantite_Sapphire.name=Intuitive - Adamantite Daggers
+items.Weapon_Battleaxe_Adamantite_Sapphire.name=Intuitive - Adamantite Battleaxe
+	items.Weapon_Sapphire.description=<b><color is="#326be6">Competence:</color></b><i><color is="#ffffff"> Increases the amount of signature energy generated per hit.</color></i>
+
+
+items.Armor_Thorium_Chest_Topaz.name=Striking - Thorium Cuirass
+items.Armor_Thorium_Hands_Topaz.name=Striking - Thorium Gauntlets
+items.Armor_Thorium_Head_Topaz.name=Striking - Thorium Helm
+items.Armor_Thorium_Legs_Topaz.name=Striking - Thorium Greaves
+items.Armor_Cobalt_Chest_Topaz.name=Striking - Cobalt Cuirass
+items.Armor_Cobalt_Hands_Topaz.name=Striking - Cobalt Gauntlets
+items.Armor_Cobalt_Head_Topaz.name=Striking - Cobalt Helm
+items.Armor_Cobalt_Legs_Topaz.name=Striking - Cobalt Greaves
+items.Armor_Adamantite_Chest_Topaz.name=Striking - Adamantite Cuirass
+items.Armor_Adamantite_Hands_Topaz.name=Striking - Adamantite Gauntlets
+items.Armor_Adamantite_Head_Topaz.name=Striking - Adamantite Helm
+items.Armor_Adamantite_Legs_Topaz.name=Striking - Adamantite Greaves
+	items.Armor_Topaz.description=<b><color is="#dec310">Endure:</color></b><i><color is="#ffffff"> When your stamina drops to 0, restore some from each piece. 30s cooldown.</color></i>
+
+items.Tool_Pickaxe_Thorium_Topaz.name=Striking - Thorium Pickaxe
+items.Tool_Hatchet_Thorium_Topaz.name=Striking - Thorium Hatchet
+items.Tool_Pickaxe_Cobalt_Topaz.name=Striking - Cobalt Pickaxe
+items.Tool_Hatchet_Cobalt_Topaz.name=Striking - Cobalt Hatchet
+items.Tool_Pickaxe_Adamantite_Topaz.name=Striking - Adamantite Pickaxe
+items.Tool_Hatchet_Adamantite_Topaz.name=Striking - Adamantite Hatchet
+	items.Tool_Topaz.description=<b><color is="#dec310">Flash:</color></b><i><color is="#ffffff"> Illuminates the surrounding area.</color></i>
+
+items.Weapon_Shield_Thorium_Topaz.name=Striking - Thorium Shield
+items.Weapon_Shield_Cobalt_Topaz.name=Striking - Cobalt Shield
+items.Weapon_Shield_Adamantite_Topaz.name=Striking - Adamantite Shield
+	items.Weapon_Shield_Topaz.description=<b><color is="#dec310">Numbness:</color></b><i><color is="#ffffff"> Enemies that hit your shield are slowed for 2 seconds.</color></i>
+
+items.Weapon_Sword_Thorium_Topaz.name=Striking - Thorium Sword
+items.Weapon_Shortbow_Thorium_Topaz.name=Striking - Thorium Bow
+items.Weapon_Mace_Thorium_Topaz.name=Striking - Thorium Mace
+items.Weapon_Daggers_Thorium_Topaz.name=Striking - Thorium Daggers
+items.Weapon_Battleaxe_Thorium_Topaz.name=Striking - Thorium Battleaxe
+items.Weapon_Sword_Cobalt_Topaz.name=Striking - Cobalt Sword
+items.Weapon_Shortbow_Cobalt_Topaz.name=Striking - Cobalt Bow
+items.Weapon_Mace_Cobalt_Topaz.name=Striking - Cobalt Mace
+items.Weapon_Daggers_Cobalt_Topaz.name=Striking - Cobalt Daggers
+items.Weapon_Battleaxe_Cobalt_Topaz.name=Striking - Cobalt Battleaxe
+items.Weapon_Sword_Adamantite_Topaz.name=Striking - Adamantite Sword
+items.Weapon_Shortbow_Adamantite_Topaz.name=Striking - Adamantite Bow
+items.Weapon_Mace_Adamantite_Topaz.name=Striking - Adamantite Mace
+items.Weapon_Daggers_Adamantite_Topaz.name=Striking - Adamantite Daggers
+items.Weapon_Battleaxe_Adamantite_Topaz.name=Striking - Adamantite Battleaxe
+	items.Weapon_Topaz.description=<b><color is="#dec310">Spike:</color></b><i><color is="#ffffff"> Greatly increases the damage of charged attacks.</color></i>
+	
+	
+items.Armor_Thorium_Chest_Voidstone.name=Draining - Thorium Cuirass
+items.Armor_Thorium_Hands_Voidstone.name=Draining - Thorium Gauntlets
+items.Armor_Thorium_Head_Voidstone.name=Draining - Thorium Helm
+items.Armor_Thorium_Legs_Voidstone.name=Draining - Thorium Greaves
+items.Armor_Cobalt_Chest_Voidstone.name=Draining - Cobalt Cuirass
+items.Armor_Cobalt_Hands_Voidstone.name=Draining - Cobalt Gauntlets
+items.Armor_Cobalt_Head_Voidstone.name=Draining - Cobalt Helm
+items.Armor_Cobalt_Legs_Voidstone.name=Draining - Cobalt Greaves
+items.Armor_Adamantite_Chest_Voidstone.name=Draining - Adamantite Cuirass
+items.Armor_Adamantite_Hands_Voidstone.name=Draining - Adamantite Gauntlets
+items.Armor_Adamantite_Head_Voidstone.name=Draining - Adamantite Helm
+items.Armor_Adamantite_Legs_Voidstone.name=Draining - Adamantite Greaves
+	items.Armor_Voidstone.description=<b><color is="#a217ff">Gluttony:</color></b><i><color is="#ffffff"> Drains life from all nearby creatures.</color></i>
+
+items.Tool_Pickaxe_Thorium_Voidstone.name=Draining - Thorium Pickaxe
+items.Tool_Hatchet_Thorium_Voidstone.name=Draining - Thorium Hatchet
+items.Tool_Pickaxe_Cobalt_Voidstone.name=Draining - Cobalt Pickaxe
+items.Tool_Hatchet_Cobalt_Voidstone.name=Draining - Cobalt Hatchet
+items.Tool_Pickaxe_Adamantite_Voidstone.name=Draining - Adamantite Pickaxe
+items.Tool_Hatchet_Adamantite_Voidstone.name=Draining - Adamantite Hatchet
+	items.Tool_Voidstone.description=<b><color is="#a217ff">Greed:</color></b><i><color is="#ffffff"> Breaks all ore and trunk blocks in a 5×5 radius.</color></i>
+
+items.Weapon_Shield_Thorium_Voidstone.name=Draining - Thorium Shield
+items.Weapon_Shield_Cobalt_Voidstone.name=Draining - Cobalt Shield
+items.Weapon_Shield_Adamantite_Voidstone.name=Draining - Adamantite Shield
+	items.Weapon_Shield_Voidstone.description=<b><color is="#a217ff">Sloth:</color></b><i><color is="#ffffff"> While blocking, drains health from attacking creatures.</color></i>
+
+items.Weapon_Sword_Thorium_Voidstone.name=Draining - Thorium Sword
+items.Weapon_Shortbow_Thorium_Voidstone.name=Draining - Thorium Bow
+items.Weapon_Mace_Thorium_Voidstone.name=Draining - Thorium Mace
+items.Weapon_Daggers_Thorium_Voidstone.name=Draining - Thorium Daggers
+items.Weapon_Battleaxe_Thorium_Voidstone.name=Draining - Thorium Battleaxe
+items.Weapon_Sword_Cobalt_Voidstone.name=Draining - Cobalt Sword
+items.Weapon_Shortbow_Cobalt_Voidstone.name=Draining - Cobalt Bow
+items.Weapon_Mace_Cobalt_Voidstone.name=Draining - Cobalt Mace
+items.Weapon_Daggers_Cobalt_Voidstone.name=Draining - Cobalt Daggers
+items.Weapon_Battleaxe_Cobalt_Voidstone.name=Draining - Cobalt Battleaxe
+items.Weapon_Sword_Adamantite_Voidstone.name=Draining - Adamantite Sword
+items.Weapon_Shortbow_Adamantite_Voidstone.name=Draining - Adamantite Bow
+items.Weapon_Mace_Adamantite_Voidstone.name=Draining - Adamantite Mace
+items.Weapon_Daggers_Adamantite_Voidstone.name=Draining - Adamantite Daggers
+items.Weapon_Battleaxe_Adamantite_Voidstone.name=Draining - Adamantite Battleaxe
+	items.Weapon_Voidstone.description=<b><color is="#a217ff">Wrath:</color></b><i><color is="#ffffff"> Partially drains life from enemies on hit.</color></i>
+
+
+items.Armor_Thorium_Chest_Zephyr.name=Swifty - Thorium Cuirass
+items.Armor_Thorium_Hands_Zephyr.name=Swifty - Thorium Gauntlets
+items.Armor_Thorium_Head_Zephyr.name=Swifty - Thorium Helm
+items.Armor_Thorium_Legs_Zephyr.name=Swifty - Thorium Greaves
+items.Armor_Cobalt_Chest_Zephyr.name=Swifty - Cobalt Cuirass
+items.Armor_Cobalt_Hands_Zephyr.name=Swifty - Cobalt Gauntlets
+items.Armor_Cobalt_Head_Zephyr.name=Swifty - Cobalt Helm
+items.Armor_Cobalt_Legs_Zephyr.name=Swifty - Cobalt Greaves
+items.Armor_Adamantite_Chest_Zephyr.name=Swifty - Adamantite Cuirass
+items.Armor_Adamantite_Hands_Zephyr.name=Swifty - Adamantite Gauntlets
+items.Armor_Adamantite_Head_Zephyr.name=Swifty - Adamantite Helm
+items.Armor_Adamantite_Legs_Zephyr.name=Swifty - Adamantite Greaves
+	items.Armor_Zephyr.description=<b><color is="#10b8de">Swiftness:</color></b><i><color is="#ffffff"> Increases movement speed while equipped.</color></i>
+
+items.Tool_Pickaxe_Thorium_Zephyr.name=Swifty - Thorium Pickaxe
+items.Tool_Hatchet_Thorium_Zephyr.name=Swifty - Thorium Hatchet
+items.Tool_Pickaxe_Cobalt_Zephyr.name=Swifty - Cobalt Pickaxe
+items.Tool_Hatchet_Cobalt_Zephyr.name=Swifty - Cobalt Hatchet
+items.Tool_Pickaxe_Adamantite_Zephyr.name=Swifty - Adamantite Pickaxe
+items.Tool_Hatchet_Adamantite_Zephyr.name=Swifty - Adamantite Hatchet
+	items.Tool_Zephyr.description=<b><color is="#10b8de">Momentum:</color></b><i><color is="#ffffff"> Breaking a block grants a speed boost for 5 seconds.</color></i>
+
+items.Weapon_Shield_Thorium_Zephyr.name=Swifty - Thorium Shield
+items.Weapon_Shield_Cobalt_Zephyr.name=Swifty - Cobalt Shield
+items.Weapon_Shield_Adamantite_Zephyr.name=Swifty - Adamantite Shield
+	items.Weapon_Shield_Zephyr.description=<b><color is="#10b8de">Charge:</color></b><i><color is="#ffffff"> Dash forward when bashing.</color></i>
+
+items.Weapon_Sword_Thorium_Zephyr.name=Swifty - Thorium Sword
+items.Weapon_Shortbow_Thorium_Zephyr.name=Swifty - Thorium Bow
+items.Weapon_Mace_Thorium_Zephyr.name=Swifty - Thorium Mace
+items.Weapon_Daggers_Thorium_Zephyr.name=Swifty - Thorium Daggers
+items.Weapon_Battleaxe_Thorium_Zephyr.name=Swifty - Thorium Battleaxe
+items.Weapon_Sword_Cobalt_Zephyr.name=Swifty - Cobalt Sword
+items.Weapon_Shortbow_Cobalt_Zephyr.name=Swifty - Cobalt Bow
+items.Weapon_Mace_Cobalt_Zephyr.name=Swifty - Cobalt Mace
+items.Weapon_Daggers_Cobalt_Zephyr.name=Swifty - Cobalt Daggers
+items.Weapon_Battleaxe_Cobalt_Zephyr.name=Swifty - Cobalt Battleaxe
+items.Weapon_Sword_Adamantite_Zephyr.name=Swifty - Adamantite Sword
+items.Weapon_Shortbow_Adamantite_Zephyr.name=Swifty - Adamantite Bow
+items.Weapon_Mace_Adamantite_Zephyr.name=Swifty - Adamantite Mace
+items.Weapon_Daggers_Adamantite_Zephyr.name=Swifty - Adamantite Daggers
+items.Weapon_Battleaxe_Adamantite_Zephyr.name=Swifty - Adamantite Battleaxe
+	items.Weapon_Zephyr.description=<b><color is="#10b8de">Celerity:</color></b><i><color is="#ffffff"> Increases basic attack speed.</color></i>
+	items.Weapon_Ranged_Zephyr.description=<b><color is="#10b8de">Sling:</color></b><i><color is="#ffffff"> Increases projectile speed.</color></i>
+
+
+items.Armor_Thorium_Chest_Quartz.name=Vigorous - Thorium Cuirass
+items.Armor_Thorium_Hands_Quartz.name=Vigorous - Thorium Gauntlets
+items.Armor_Thorium_Head_Quartz.name=Vigorous - Thorium Helm
+items.Armor_Thorium_Legs_Quartz.name=Vigorous - Thorium Greaves
+items.Armor_Cobalt_Chest_Quartz.name=Vigorous - Cobalt Cuirass
+items.Armor_Cobalt_Hands_Quartz.name=Vigorous - Cobalt Gauntlets
+items.Armor_Cobalt_Head_Quartz.name=Vigorous - Cobalt Helm
+items.Armor_Cobalt_Legs_Quartz.name=Vigorous - Cobalt Greaves
+items.Armor_Adamantite_Chest_Quartz.name=Vigorous - Adamantite Cuirass
+items.Armor_Adamantite_Hands_Quartz.name=Vigorous - Adamantite Gauntlets
+items.Armor_Adamantite_Head_Quartz.name=Vigorous - Adamantite Helm
+items.Armor_Adamantite_Legs_Quartz.name=Vigorous - Adamantite Greaves
+	items.Armor_Quartz.description=<b><color is="#ffd2f7">Rejuvenation:</color></b><i><color is="#ffffff"> Grants base regeneration.</color></i>
+
+items.Tool_Pickaxe_Thorium_Quartz.name=Vigorous - Thorium Pickaxe
+items.Tool_Hatchet_Thorium_Quartz.name=Vigorous - Thorium Hatchet
+items.Tool_Pickaxe_Cobalt_Quartz.name=Vigorous - Cobalt Pickaxe
+items.Tool_Hatchet_Cobalt_Quartz.name=Vigorous - Adamantite Hatchet
+items.Tool_Pickaxe_Adamantite_Quartz.name=Vigorous - Adamantite Pickaxe
+items.Tool_Hatchet_Adamantite_Quartz.name=Vigorous - Adamantite Hatchet
+
+items.Weapon_Sword_Thorium_Quartz.name=Vigorous - Thorium Sword
+items.Weapon_Shortbow_Thorium_Quartz.name=Vigorous - Thorium Bow
+items.Weapon_Mace_Thorium_Quartz.name=Vigorous - Thorium Mace
+items.Weapon_Daggers_Thorium_Quartz.name=Vigorous - Thorium Daggers
+items.Weapon_Battleaxe_Thorium_Quartz.name=Vigorous - Thorium Battleaxe
+items.Weapon_Sword_Cobalt_Quartz.name=Vigorous - Cobalt Sword
+items.Weapon_Shortbow_Cobalt_Quartz.name=Vigorous - Cobalt Bow
+items.Weapon_Mace_Cobalt_Quartz.name=Vigorous - Cobalt Mace
+items.Weapon_Daggers_Cobalt_Quartz.name=Vigorous - Cobalt Daggers
+items.Weapon_Battleaxe_Cobalt_Quartz.name=Vigorous - Cobalt Battleaxe
+items.Weapon_Sword_Adamantite_Quartz.name=Vigorous - Adamantite Sword
+items.Weapon_Shortbow_Adamantite_Quartz.name=Vigorous - Adamantite Bow
+items.Weapon_Mace_Adamantite_Quartz.name=Vigorous - Adamantite Mace
+items.Weapon_Daggers_Adamantite_Quartz.name=Vigorous - Adamantite Daggers
+items.Weapon_Battleaxe_Adamantite_Quartz.name=Vigorous - Adamantite Battleaxe
+	items.Tool_Quartz.description=<b><color is="#ffd2f7">Restful:</color></b><i><color is="#ffffff"> While held, grants slight regeneration.</color></i>
+		
+items.Weapon_Shield_Thorium_Quartz.name=Vigorous - Thorium Shield
+items.Weapon_Shield_Cobalt_Quartz.name=Vigorous - Cobalt Shield
+items.Weapon_Shield_Adamantite_Quartz.name=Vigorous - Adamantite Shield
+	items.Weapon_Shield_Quartz.description=<b><color is="#ffd2f7">Survival:</color></b><i><color is="#ffffff"> Each block restored heals a small amount of HP.</color></i>
+
+
+
+items.Weapon_Sword_Thorium_Mix_Diamond_Emerald.name=Divinity & Browny - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Diamond_Ruby.name=Divinity & Powerful - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Diamond_Topaz.name=Divinity & Striking - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Diamond_Voidstone.name=Divinity & Draining - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Diamond_Zephyr.name=Divinity & Swifty - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Diamond_Quartz.name=Divinity & Vigorous - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Emerald_Ruby.name=Browny & Powerful - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Emerald_Sapphire.name=Browny & Intuitive - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Emerald_Topaz.name=Browny & Striking - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Emerald_Voidstone.name=Browny & Draining - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Emerald_Zephyr.name=Browny & Swifty - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Emerald_Quartz.name=Browny & Vigorous - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Ruby_Topaz.name=Powerful & Striking - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Ruby_Voidstone.name=Powerful & Draining - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Ruby_Zephyr.name=Powerful & Swifty - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Ruby_Quartz.name=Powerful & Vigorous - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Sapphire_Topaz.name=Intuitive & Striking - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Topaz_Voidstone.name=Striking & Draining - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Topaz_Zephyr.name=Striking & Swifty - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Topaz_Quartz.name=Striking & Vigorous - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Voidstone_Zephyr.name=Draining & Swifty - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Voidstone_Quartz.name=Draining & Vigorous - Thorium Sword
+items.Weapon_Sword_Thorium_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Thorium Sword
+
+items.Weapon_Sword_Cobalt_Mix_Diamond_Emerald.name=Divinity & Browny - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Diamond_Ruby.name=Divinity & Powerful - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Diamond_Topaz.name=Divinity & Striking - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Diamond_Voidstone.name=Divinity & Draining - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Diamond_Zephyr.name=Divinity & Swifty - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Diamond_Quartz.name=Divinity & Vigorous - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Emerald_Ruby.name=Browny & Powerful - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Emerald_Sapphire.name=Browny & Intuitive - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Emerald_Topaz.name=Browny & Striking - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Emerald_Voidstone.name=Browny & Draining - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Emerald_Zephyr.name=Browny & Swifty - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Emerald_Quartz.name=Browny & Vigorous - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Ruby_Topaz.name=Powerful & Striking - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Ruby_Voidstone.name=Powerful & Draining - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Ruby_Zephyr.name=Powerful & Swifty - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Ruby_Quartz.name=Powerful & Vigorous - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Sapphire_Topaz.name=Intuitive & Striking - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Topaz_Voidstone.name=Striking & Draining - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Topaz_Zephyr.name=Striking & Swifty - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Topaz_Quartz.name=Striking & Vigorous - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Voidstone_Zephyr.name=Draining & Swifty - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Voidstone_Quartz.name=Draining & Vigorous - Cobalt Sword
+items.Weapon_Sword_Cobalt_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Cobalt Sword
+
+items.Weapon_Sword_Adamantite_Mix_Diamond_Emerald.name=Divinity & Browny - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Diamond_Ruby.name=Divinity & Powerful - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Diamond_Topaz.name=Divinity & Striking - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Diamond_Voidstone.name=Divinity & Draining - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Diamond_Zephyr.name=Divinity & Swifty - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Diamond_Quartz.name=Divinity & Vigorous - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Emerald_Ruby.name=Browny & Powerful - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Emerald_Sapphire.name=Browny & Intuitive - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Emerald_Topaz.name=Browny & Striking - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Emerald_Voidstone.name=Browny & Draining - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Emerald_Zephyr.name=Browny & Swifty - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Emerald_Quartz.name=Browny & Vigorous - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Ruby_Topaz.name=Powerful & Striking - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Ruby_Voidstone.name=Powerful & Draining - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Ruby_Zephyr.name=Powerful & Swifty - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Ruby_Quartz.name=Powerful & Vigorous - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Sapphire_Topaz.name=Intuitive & Striking - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Topaz_Voidstone.name=Striking & Draining - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Topaz_Zephyr.name=Striking & Swifty - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Topaz_Quartz.name=Striking & Vigorous - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Voidstone_Zephyr.name=Draining & Swifty - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Voidstone_Quartz.name=Draining & Vigorous - Adamantite Sword
+items.Weapon_Sword_Adamantite_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Adamantite Sword
+
+
+items.Weapon_Shortbow_Thorium_Mix_Diamond_Emerald.name=Divinity & Browny - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Diamond_Ruby.name=Divinity & Powerful - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Diamond_Topaz.name=Divinity & Striking - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Diamond_Voidstone.name=Divinity & Draining - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Diamond_Zephyr.name=Divinity & Swifty - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Diamond_Quartz.name=Divinity & Vigorous - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Emerald_Ruby.name=Browny & Powerful - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Emerald_Sapphire.name=Browny & Intuitive - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Emerald_Topaz.name=Browny & Striking - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Emerald_Voidstone.name=Browny & Draining - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Emerald_Zephyr.name=Browny & Swifty - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Emerald_Quartz.name=Browny & Vigorous - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Ruby_Topaz.name=Powerful & Striking - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Ruby_Voidstone.name=Powerful & Draining - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Ruby_Zephyr.name=Powerful & Swifty - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Ruby_Quartz.name=Powerful & Vigorous - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Sapphire_Topaz.name=Intuitive & Striking - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Topaz_Voidstone.name=Striking & Draining - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Topaz_Zephyr.name=Striking & Swifty - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Topaz_Quartz.name=Striking & Vigorous - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Voidstone_Zephyr.name=Draining & Swifty - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Voidstone_Quartz.name=Draining & Vigorous - Thorium Shortbow
+items.Weapon_Shortbow_Thorium_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Thorium Shortbow
+
+items.Weapon_Shortbow_Cobalt_Mix_Diamond_Emerald.name=Divinity & Browny - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Diamond_Ruby.name=Divinity & Powerful - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Diamond_Topaz.name=Divinity & Striking - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Diamond_Voidstone.name=Divinity & Draining - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Diamond_Zephyr.name=Divinity & Swifty - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Diamond_Quartz.name=Divinity & Vigorous - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Emerald_Ruby.name=Browny & Powerful - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Emerald_Sapphire.name=Browny & Intuitive - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Emerald_Topaz.name=Browny & Striking - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Emerald_Voidstone.name=Browny & Draining - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Emerald_Zephyr.name=Browny & Swifty - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Emerald_Quartz.name=Browny & Vigorous - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Ruby_Topaz.name=Powerful & Striking - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Ruby_Voidstone.name=Powerful & Draining - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Ruby_Zephyr.name=Powerful & Swifty - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Ruby_Quartz.name=Powerful & Vigorous - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Sapphire_Topaz.name=Intuitive & Striking - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Topaz_Voidstone.name=Striking & Draining - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Topaz_Zephyr.name=Striking & Swifty - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Topaz_Quartz.name=Striking & Vigorous - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Voidstone_Zephyr.name=Draining & Swifty - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Voidstone_Quartz.name=Draining & Vigorous - Cobalt Shortbow
+items.Weapon_Shortbow_Cobalt_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Cobalt Shortbow
+
+items.Weapon_Shortbow_Adamantite_Mix_Diamond_Emerald.name=Divinity & Browny - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Diamond_Ruby.name=Divinity & Powerful - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Diamond_Topaz.name=Divinity & Striking - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Diamond_Voidstone.name=Divinity & Draining - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Diamond_Zephyr.name=Divinity & Swifty - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Diamond_Quartz.name=Divinity & Vigorous - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Emerald_Ruby.name=Browny & Powerful - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Emerald_Sapphire.name=Browny & Intuitive - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Emerald_Topaz.name=Browny & Striking - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Emerald_Voidstone.name=Browny & Draining - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Emerald_Zephyr.name=Browny & Swifty - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Emerald_Quartz.name=Browny & Vigorous - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Ruby_Topaz.name=Powerful & Striking - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Ruby_Voidstone.name=Powerful & Draining - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Ruby_Zephyr.name=Powerful & Swifty - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Ruby_Quartz.name=Powerful & Vigorous - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Sapphire_Topaz.name=Intuitive & Striking - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Topaz_Voidstone.name=Striking & Draining - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Topaz_Zephyr.name=Striking & Swifty - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Topaz_Quartz.name=Striking & Vigorous - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Voidstone_Zephyr.name=Draining & Swifty - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Voidstone_Quartz.name=Draining & Vigorous - Adamantite Shortbow
+items.Weapon_Shortbow_Adamantite_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Adamantite Shortbow
+
+
+items.Weapon_Mace_Thorium_Mix_Diamond_Emerald.name=Divinity & Browny - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Diamond_Ruby.name=Divinity & Powerful - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Diamond_Topaz.name=Divinity & Striking - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Diamond_Voidstone.name=Divinity & Draining - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Diamond_Zephyr.name=Divinity & Swifty - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Diamond_Quartz.name=Divinity & Vigorous - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Emerald_Ruby.name=Browny & Powerful - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Emerald_Sapphire.name=Browny & Intuitive - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Emerald_Topaz.name=Browny & Striking - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Emerald_Voidstone.name=Browny & Draining - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Emerald_Zephyr.name=Browny & Swifty - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Emerald_Quartz.name=Browny & Vigorous - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Ruby_Topaz.name=Powerful & Striking - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Ruby_Voidstone.name=Powerful & Draining - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Ruby_Zephyr.name=Powerful & Swifty - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Ruby_Quartz.name=Powerful & Vigorous - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Sapphire_Topaz.name=Intuitive & Striking - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Topaz_Voidstone.name=Striking & Draining - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Topaz_Zephyr.name=Striking & Swifty - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Topaz_Quartz.name=Striking & Vigorous - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Voidstone_Zephyr.name=Draining & Swifty - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Voidstone_Quartz.name=Draining & Vigorous - Thorium Mace
+items.Weapon_Mace_Thorium_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Thorium Mace
+
+items.Weapon_Mace_Cobalt_Mix_Diamond_Emerald.name=Divinity & Browny - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Diamond_Ruby.name=Divinity & Powerful - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Diamond_Topaz.name=Divinity & Striking - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Diamond_Voidstone.name=Divinity & Draining - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Diamond_Zephyr.name=Divinity & Swifty - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Diamond_Quartz.name=Divinity & Vigorous - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Emerald_Ruby.name=Browny & Powerful - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Emerald_Sapphire.name=Browny & Intuitive - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Emerald_Topaz.name=Browny & Striking - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Emerald_Voidstone.name=Browny & Draining - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Emerald_Zephyr.name=Browny & Swifty - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Emerald_Quartz.name=Browny & Vigorous - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Ruby_Topaz.name=Powerful & Striking - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Ruby_Voidstone.name=Powerful & Draining - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Ruby_Zephyr.name=Powerful & Swifty - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Ruby_Quartz.name=Powerful & Vigorous - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Sapphire_Topaz.name=Intuitive & Striking - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Topaz_Voidstone.name=Striking & Draining - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Topaz_Zephyr.name=Striking & Swifty - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Topaz_Quartz.name=Striking & Vigorous - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Voidstone_Zephyr.name=Draining & Swifty - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Voidstone_Quartz.name=Draining & Vigorous - Cobalt Mace
+items.Weapon_Mace_Cobalt_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Cobalt Mace
+
+items.Weapon_Mace_Adamantite_Mix_Diamond_Emerald.name=Divinity & Browny - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Diamond_Ruby.name=Divinity & Powerful - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Diamond_Topaz.name=Divinity & Striking - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Diamond_Voidstone.name=Divinity & Draining - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Diamond_Zephyr.name=Divinity & Swifty - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Diamond_Quartz.name=Divinity & Vigorous - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Emerald_Ruby.name=Browny & Powerful - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Emerald_Sapphire.name=Browny & Intuitive - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Emerald_Topaz.name=Browny & Striking - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Emerald_Voidstone.name=Browny & Draining - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Emerald_Zephyr.name=Browny & Swifty - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Emerald_Quartz.name=Browny & Vigorous - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Ruby_Topaz.name=Powerful & Striking - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Ruby_Voidstone.name=Powerful & Draining - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Ruby_Zephyr.name=Powerful & Swifty - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Ruby_Quartz.name=Powerful & Vigorous - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Sapphire_Topaz.name=Intuitive & Striking - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Topaz_Voidstone.name=Striking & Draining - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Topaz_Zephyr.name=Striking & Swifty - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Topaz_Quartz.name=Striking & Vigorous - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Voidstone_Zephyr.name=Draining & Swifty - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Voidstone_Quartz.name=Draining & Vigorous - Adamantite Mace
+items.Weapon_Mace_Adamantite_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Adamantite Mace
+
+
+items.Weapon_Daggers_Thorium_Mix_Diamond_Emerald.name=Divinity & Browny - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Diamond_Ruby.name=Divinity & Powerful - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Diamond_Topaz.name=Divinity & Striking - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Diamond_Voidstone.name=Divinity & Draining - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Diamond_Zephyr.name=Divinity & Swifty - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Diamond_Quartz.name=Divinity & Vigorous - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Emerald_Ruby.name=Browny & Powerful - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Emerald_Sapphire.name=Browny & Intuitive - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Emerald_Topaz.name=Browny & Striking - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Emerald_Voidstone.name=Browny & Draining - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Emerald_Zephyr.name=Browny & Swifty - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Emerald_Quartz.name=Browny & Vigorous - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Ruby_Topaz.name=Powerful & Striking - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Ruby_Voidstone.name=Powerful & Draining - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Ruby_Zephyr.name=Powerful & Swifty - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Ruby_Quartz.name=Powerful & Vigorous - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Sapphire_Topaz.name=Intuitive & Striking - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Topaz_Voidstone.name=Striking & Draining - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Topaz_Zephyr.name=Striking & Swifty - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Topaz_Quartz.name=Striking & Vigorous - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Voidstone_Zephyr.name=Draining & Swifty - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Voidstone_Quartz.name=Draining & Vigorous - Thorium Daggers
+items.Weapon_Daggers_Thorium_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Thorium Daggers
+
+items.Weapon_Daggers_Cobalt_Mix_Diamond_Emerald.name=Divinity & Browny - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Diamond_Ruby.name=Divinity & Powerful - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Diamond_Topaz.name=Divinity & Striking - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Diamond_Voidstone.name=Divinity & Draining - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Diamond_Zephyr.name=Divinity & Swifty - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Diamond_Quartz.name=Divinity & Vigorous - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Emerald_Ruby.name=Browny & Powerful - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Emerald_Sapphire.name=Browny & Intuitive - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Emerald_Topaz.name=Browny & Striking - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Emerald_Voidstone.name=Browny & Draining - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Emerald_Zephyr.name=Browny & Swifty - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Emerald_Quartz.name=Browny & Vigorous - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Ruby_Topaz.name=Powerful & Striking - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Ruby_Voidstone.name=Powerful & Draining - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Ruby_Zephyr.name=Powerful & Swifty - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Ruby_Quartz.name=Powerful & Vigorous - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Sapphire_Topaz.name=Intuitive & Striking - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Topaz_Voidstone.name=Striking & Draining - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Topaz_Zephyr.name=Striking & Swifty - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Topaz_Quartz.name=Striking & Vigorous - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Voidstone_Zephyr.name=Draining & Swifty - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Voidstone_Quartz.name=Draining & Vigorous - Cobalt Daggers
+items.Weapon_Daggers_Cobalt_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Cobalt Daggers
+
+items.Weapon_Daggers_Adamantite_Mix_Diamond_Emerald.name=Divinity & Browny - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Diamond_Ruby.name=Divinity & Powerful - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Diamond_Topaz.name=Divinity & Striking - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Diamond_Voidstone.name=Divinity & Draining - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Diamond_Zephyr.name=Divinity & Swifty - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Diamond_Quartz.name=Divinity & Vigorous - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Emerald_Ruby.name=Browny & Powerful - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Emerald_Sapphire.name=Browny & Intuitive - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Emerald_Topaz.name=Browny & Striking - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Emerald_Voidstone.name=Browny & Draining - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Emerald_Zephyr.name=Browny & Swifty - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Emerald_Quartz.name=Browny & Vigorous - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Ruby_Topaz.name=Powerful & Striking - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Ruby_Voidstone.name=Powerful & Draining - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Ruby_Zephyr.name=Powerful & Swifty - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Ruby_Quartz.name=Powerful & Vigorous - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Sapphire_Topaz.name=Intuitive & Striking - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Topaz_Voidstone.name=Striking & Draining - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Topaz_Zephyr.name=Striking & Swifty - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Topaz_Quartz.name=Striking & Vigorous - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Voidstone_Zephyr.name=Draining & Swifty - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Voidstone_Quartz.name=Draining & Vigorous - Adamantite Daggers
+items.Weapon_Daggers_Adamantite_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Adamantite Daggers
+
+
+items.Weapon_Battleaxe_Thorium_Mix_Diamond_Emerald.name=Divinity & Browny - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Diamond_Ruby.name=Divinity & Powerful - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Diamond_Topaz.name=Divinity & Striking - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Diamond_Voidstone.name=Divinity & Draining - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Diamond_Zephyr.name=Divinity & Swifty - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Diamond_Quartz.name=Divinity & Vigorous - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Emerald_Ruby.name=Browny & Powerful - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Emerald_Sapphire.name=Browny & Intuitive - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Emerald_Topaz.name=Browny & Striking - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Emerald_Voidstone.name=Browny & Draining - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Emerald_Zephyr.name=Browny & Swifty - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Emerald_Quartz.name=Browny & Vigorous - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Ruby_Topaz.name=Powerful & Striking - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Ruby_Voidstone.name=Powerful & Draining - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Ruby_Zephyr.name=Powerful & Swifty - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Ruby_Quartz.name=Powerful & Vigorous - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Sapphire_Topaz.name=Intuitive & Striking - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Topaz_Voidstone.name=Striking & Draining - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Topaz_Zephyr.name=Striking & Swifty - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Topaz_Quartz.name=Striking & Vigorous - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Voidstone_Zephyr.name=Draining & Swifty - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Voidstone_Quartz.name=Draining & Vigorous - Thorium Battleaxe
+items.Weapon_Battleaxe_Thorium_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Thorium Battleaxe
+
+items.Weapon_Battleaxe_Cobalt_Mix_Diamond_Emerald.name=Divinity & Browny - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Diamond_Ruby.name=Divinity & Powerful - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Diamond_Topaz.name=Divinity & Striking - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Diamond_Voidstone.name=Divinity & Draining - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Diamond_Zephyr.name=Divinity & Swifty - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Diamond_Quartz.name=Divinity & Vigorous - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Emerald_Ruby.name=Browny & Powerful - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Emerald_Sapphire.name=Browny & Intuitive - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Emerald_Topaz.name=Browny & Striking - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Emerald_Voidstone.name=Browny & Draining - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Emerald_Zephyr.name=Browny & Swifty - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Emerald_Quartz.name=Browny & Vigorous - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Ruby_Topaz.name=Powerful & Striking - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Ruby_Voidstone.name=Powerful & Draining - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Ruby_Zephyr.name=Powerful & Swifty - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Ruby_Quartz.name=Powerful & Vigorous - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Sapphire_Topaz.name=Intuitive & Striking - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Topaz_Voidstone.name=Striking & Draining - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Topaz_Zephyr.name=Striking & Swifty - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Topaz_Quartz.name=Striking & Vigorous - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Voidstone_Zephyr.name=Draining & Swifty - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Voidstone_Quartz.name=Draining & Vigorous - Cobalt Battleaxe
+items.Weapon_Battleaxe_Cobalt_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Cobalt Battleaxe
+
+items.Weapon_Battleaxe_Adamantite_Mix_Diamond_Emerald.name=Divinity & Browny - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Diamond_Ruby.name=Divinity & Powerful - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Diamond_Sapphire.name=Divinity & Intuitive - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Diamond_Topaz.name=Divinity & Striking - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Diamond_Voidstone.name=Divinity & Draining - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Diamond_Zephyr.name=Divinity & Swifty - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Diamond_Quartz.name=Divinity & Vigorous - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Emerald_Ruby.name=Browny & Powerful - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Emerald_Sapphire.name=Browny & Intuitive - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Emerald_Topaz.name=Browny & Striking - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Emerald_Voidstone.name=Browny & Draining - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Emerald_Zephyr.name=Browny & Swifty - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Emerald_Quartz.name=Browny & Vigorous - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Ruby_Sapphire.name=Powerful & Intuitive - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Ruby_Topaz.name=Powerful & Striking - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Ruby_Voidstone.name=Powerful & Draining - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Ruby_Zephyr.name=Powerful & Swifty - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Ruby_Quartz.name=Powerful & Vigorous - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Sapphire_Topaz.name=Intuitive & Striking - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Sapphire_Voidstone.name=Intuitive & Draining - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Sapphire_Zephyr.name=Intuitive & Swifty - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Sapphire_Quartz.name=Intuitive & Vigorous - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Topaz_Voidstone.name=Striking & Draining - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Topaz_Zephyr.name=Striking & Swifty - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Topaz_Quartz.name=Striking & Vigorous - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Voidstone_Zephyr.name=Draining & Swifty - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Voidstone_Quartz.name=Draining & Vigorous - Adamantite Battleaxe
+items.Weapon_Battleaxe_Adamantite_Mix_Zephyr_Quartz.name=Swifty & Vigorous - Adamantite Battleaxe

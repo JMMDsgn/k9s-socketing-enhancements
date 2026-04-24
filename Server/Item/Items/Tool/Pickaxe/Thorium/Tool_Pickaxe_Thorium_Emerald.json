@@ -1,0 +1,201 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Tool_Pickaxe_Thorium_Emerald.name",
+    "Description": "server.items.Tool_Emerald.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Tool_Pickaxe_THorium_Emerald.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Parent": "Tool_Pickaxe_Crude",
+  "Model": "Items/Tool/Pickaxe/Thorium/Thorium_Socketed.blockymodel",
+  "Texture": "Items/Tool/Pickaxe/Thorium/Emerald/Thorium_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Tool_Pickaxe_Thorium",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Emerald",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Tools"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Rocks",
+        "Quality": 4
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 0.17,
+        "GatherType": "VolcanicRocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreCopper"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreIron"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreSilver"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreGold"
+      },
+      {
+        "Power": 0.25,
+        "GatherType": "OreThorium"
+      },
+      {
+        "Power": 0.25,
+        "GatherType": "OreCobalt"
+      },
+      {
+        "Power": 0.125,
+        "GatherType": "OreAdamantite",
+        "Quality": 4
+      },
+      {
+        "Power": 0.084,
+        "GatherType": "OreMithril"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
+  },
+  "MaxDurability": 325,
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      45,
+      270,
+      0
+    ],
+    "Translation": [
+      27,
+      -28
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Variant": true,
+  "Particles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": -0.3,
+        "Z": 0.075
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": -0.3,
+        "Z": 0.075
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    }
+  ],
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        "Emerald_Tool_Pickaxe_Primary"
+      ]
+    }
+  },
+  "InteractionVars": {
+    "Block_Hit_Camera_Effects": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "CameraEffect": "Pickaxe_Mine_Impact"
+          }
+        }
+      ]
+    },
+    "Pickaxe_Mine_Effect": {
+      "Interactions": [
+        {
+          "Parent": "Pickaxe_Mine_Effect",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Tool_T1_Swing",
+            "LocalSoundEventId": "SFX_Pickaxe_T1_Swing_Down_Local"
+          }
+        }
+      ]
+    },
+    "Pickaxe_Mine_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Pickaxe_Mine_Damage",
+          "DamageCalculator": {
+            "Type": "Absolute",
+            "BaseDamage": {
+              "Physical": 1
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Light_Melee_T1_Impact"
+          }
+        }
+      ]
+    }
+  }
+}

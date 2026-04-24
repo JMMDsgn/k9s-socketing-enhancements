@@ -1,0 +1,317 @@
+{
+  "Parent": "Template_Weapon_Sword",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Sword_Cobalt_Mix_Ruby_Voidstone.name",
+    "Description": "server.items.Weapon_Mix_Ruby_Voidstone.description"
+  },
+  "Model": "Items/Weapon/Sword/Cobalt/Cobalt_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Sword/Cobalt/ZGemMix/Cobalt_Texture_Mix_Ruby_Voidstone.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Sword_Cobalt_Mix_Ruby_Voidstone.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Sword_Cobalt_Ruby",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Voidstone",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Swords"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 19
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 19
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 29
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 39
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T2"
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 30
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T3"
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 77
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T3"
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.21,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -39,
+      -38
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "FireSword",
+      "TargetEntityPart": "Self",
+      "Scale": 0.9,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.5,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Fire_Green",
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Yaw": 0,
+        "Pitch": 0
+      },
+      "PositionOffset": {
+        "Z": 0
+      },
+      "Scale": 0.4
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Fluid_Fire",
+      "TargetEntityPart": "Self",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": -0.1,
+        "X": 0,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "FireSword",
+      "TargetEntityPart": "Self",
+      "Scale": 0.8,
+      "PositionOffset": {
+        "Y": -0.1,
+        "X": -0.3,
+        "Z": 0.05
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Fire_Green",
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Yaw": 0,
+        "Pitch": 90
+      },
+      "PositionOffset": {
+        "Z": 0
+      },
+      "Scale": 0.4
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.35,
+        "Z": -0.05
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 45,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Ruby_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.4,
+        "Z": -0.05
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Voidstone_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Variant": true
+}

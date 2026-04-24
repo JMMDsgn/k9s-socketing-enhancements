@@ -1,0 +1,16 @@
+{
+  "TexturePath": "Trails/Ice.png",
+  "LifeSpan": 5,
+  "Roll": 90.0,
+  "Start": {
+    "Width": 0.55,
+    "Color": "#0a4bf455"
+  },
+  "End": {
+    "Width": 0.1,
+    "Color": "#3d426a07"
+  },
+  "LightInfluence": 0,
+  "Smooth": true,
+  "RenderMode": "Erosion"
+}

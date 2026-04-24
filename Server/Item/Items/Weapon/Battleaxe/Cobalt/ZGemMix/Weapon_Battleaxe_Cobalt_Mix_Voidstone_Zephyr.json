@@ -1,0 +1,315 @@
+{
+  "Parent": "Template_Weapon_Battleaxe",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Battleaxe_Cobalt_Mix_Voidstone_Zephyr.name",
+    "Description": "server.items.Weapon_Mix_Voidstone_Zephyr.description"
+  },
+  "Model": "Items/Weapon/Battleaxe/Cobalt/Cobalt_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Battleaxe/Cobalt/ZGemMix/Cobalt_Texture_Mix_Voidstone_Zephyr.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Battleaxe_Cobalt_Mix_Voidstone_Zephyr.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Battleaxe_Cobalt_Voidstone",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Zephyr",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Battleaxes"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 46
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Down_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 22
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Down_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 28
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T2"
+        }
+      ]
+    },
+    "Signature_Whirlwind_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 18
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T3"
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.45,
+  "IconProperties": {
+    "Scale": 0.27,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -57,
+      -56
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Fire_Green",
+      "TargetEntityPart": "Self",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.07
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": -90
+      }
+    },
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.35,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.3,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 90,
+        "Pitch": 0,
+        "Yaw": -90
+      }
+    },
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.35,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.3,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 90,
+        "Pitch": 180,
+        "Yaw": -90
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Fire_Green",
+      "TargetEntityPart": "Self",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.07
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": -90
+      }
+    },
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.3,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 90,
+        "Pitch": 0,
+        "Yaw": -90
+      }
+    },
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.2,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 90,
+        "Pitch": 180,
+        "Yaw": -90
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": -0.15,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "TargetNodeName": "BladeCenter",
+      "TrailId": "Voidstone_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "TargetNodeName": "BladeCenter",
+      "TrailId": "Wind_Zephyr",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Variant": true,
+  "Interactions": {
+    "Primary": "Root_Weapon_Battleaxe_Primary_Zephyr"
+  }
+}

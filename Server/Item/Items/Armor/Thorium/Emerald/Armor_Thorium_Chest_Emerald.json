@@ -1,0 +1,112 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Thorium_Chest_Emerald.name",
+    "Description": "server.items.Armor_Emerald.description"
+  },
+  "Parent": "Armor_Iron_Chest",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Thorium_Chest_Emerald.png",
+  "IconProperties": {
+    "Scale": 0.37,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0,
+      -6
+    ]
+  },
+  "Model": "Items/Armor/Thorium/Chest_Socket.blockymodel",
+  "Texture": "Items/Armor/Thorium/Emerald/Chest_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Thorium_Chest",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Emerald",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.1152,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.1152,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Poison": [
+        {
+          "Amount": 0.27,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 22,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "KnockbackResistances": {
+      "Bludgeoning": 0.25,
+      "Elemental": 0.25,
+      "Environmental": 0.25,
+      "Physical": 0.25,
+      "Projectile": 0.25,
+      "Slashing": 0.25
+    }
+  },
+  "MaxDurability": 120,
+  "DurabilityLossOnHit": 0.5,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Thorium",
+      "Socketed"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "Variant": true,
+  "Light": {
+    "Color": "#030",
+    "Radius": 0
+  }
+}

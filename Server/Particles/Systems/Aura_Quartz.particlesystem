@@ -1,0 +1,12 @@
+{
+  "Spawners": [
+    {
+      "SpawnerId": "Aura_Quartz",
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      }
+    }
+  ]
+}

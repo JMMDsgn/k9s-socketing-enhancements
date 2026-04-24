@@ -1,0 +1,27 @@
+{
+  "Type": "UseBlock",
+  "Failed": {
+    "Type": "BreakBlock",
+    "Tool": "Pickaxe",
+    "UseLatestTarget": true,
+    "Next": {
+      "Type": "ApplyEffect",
+      "EffectId": "Tool_Zephyr_Momentum"
+    }
+  },
+  "Next": {
+    "Type": "Replace",
+    "Var": "Block_Hit_Camera_Effects",
+    "DefaultOk": true,
+    "DefaultValue": {
+      "Interactions": [
+        {
+          "Type": "Simple",
+          "Effects": {
+            "CameraEffect": "Pickaxe_Mine_Impact"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Adamantite_Chest_Ruby.name",
+    "Description": "server.items.Armor_Ruby.description"
+  },
+  "Parent": "Armor_Iron_Chest",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Adamantite_Chest_Ruby.png",
+  "IconProperties": {
+    "Scale": 0.335,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      0.3,
+      0.3
+    ]
+  },
+  "Model": "Items/Armor/Adamantite/Chest_Socketed.blockymodel",
+  "Texture": "Items/Armor/Adamantite/Ruby/Chest_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Adamantite_Chest",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Ruby",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Chest",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Overtop"
+    ],
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 24,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.144,
+          "CalculationType": "Multiplicative"
+        },
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 0.02
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.144,
+          "CalculationType": "Multiplicative"
+        },
+        {
+          "Target": "Max",
+          "CalculationType": "Multiplicative",
+          "Amount": 0.02
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Light": [
+        {
+          "Amount": 0.06,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Adamantite",
+      "Socketed"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Light": {
+    "Color": "#411",
+    "Radius": 0
+  },
+  "Variant": true
+}

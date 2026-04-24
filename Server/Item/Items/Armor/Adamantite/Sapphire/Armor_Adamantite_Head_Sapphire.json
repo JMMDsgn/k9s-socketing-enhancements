@@ -1,0 +1,114 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Adamantite_Head_Sapphire.name",
+    "Description": "server.items.Armor_Sapphire.description"
+  },
+  "Parent": "Armor_Iron_Head",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Adamantite_Head_Sapphire.png",
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      23.06,
+      43.315,
+      23.06
+    ],
+    "Translation": [
+      0,
+      -1.5
+    ]
+  },
+  "Model": "Items/Armor/Adamantite/Head_Socketed.blockymodel",
+  "Texture": "Items/Armor/Adamantite/Sapphire/Head_Socket_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Adamantite_Head",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Sapphire",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Head",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "EarAccessory",
+      "Ear",
+      "Haircut",
+      "HeadAccessory"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.08,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.08,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 14,
+          "CalculationType": "Additive"
+        }
+      ],
+      "Mana": [
+        {
+          "CalculationType": "Additive",
+          "Amount": 10
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Light": [
+        {
+          "Amount": 0.03,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Adamantite"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Light": {
+    "Color": "#224",
+    "Radius": 0
+  },
+  "Variant": true
+}

@@ -1,0 +1,116 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Adamantite_Legs_Quartz.name",
+    "Description": "server.items.Armor_Quartz.description"
+  },
+  "Parent": "Armor_Iron_Legs",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Adamantite_Legs_Quartz.png",
+  "IconProperties": {
+    "Scale": 0.415,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -1.2,
+      -22.2
+    ]
+  },
+  "Model": "Items/Armor/Adamantite/Legs_Socketed.blockymodel",
+  "Texture": "Items/Armor/Adamantite/Quartz/Legs_Socket_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Adamantite_Legs",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Quartz",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Pants",
+      "Shoes"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.112,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.112,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 19,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Light": [
+        {
+          "Amount": 0.04,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "Regenerating": {
+      "Health": [
+        {
+          "Interval": 2,
+          "Amount": 0.005,
+          "ClampAtZero": true,
+          "RegenType": "Percentage"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Adamantite"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Light": {
+    "Color": "#423",
+    "Radius": 0
+  },
+  "Variant": true
+}

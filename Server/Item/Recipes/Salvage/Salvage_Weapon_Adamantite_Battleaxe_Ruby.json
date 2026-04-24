@@ -1,0 +1,28 @@
+{
+  "Input": [
+    {
+      "ItemId": "Weapon_Battleaxe_Adamantite_Ruby",
+      "Quantity": 1
+    }
+  ],
+  "PrimaryOutput": {
+    "ItemId": "Ingredient_Crystal_Blank",
+    "Quantity": 1
+  },
+  "Output": [
+    {
+      "ItemId": "Jewel_Ruby",
+      "Quantity": 1
+    },
+    {
+      "ItemId": "Weapon_Battleaxe_Adamantite"
+    }
+  ],
+  "BenchRequirement": [
+    {
+      "Type": "Processing",
+      "Id": "Salvagebench"
+    }
+  ],
+  "TimeSeconds": 4
+}

@@ -1,0 +1,140 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Adamantite_Legs_Topaz.name",
+    "Description": "server.items.Armor_Topaz.description"
+  },
+  "Parent": "Armor_Iron_Legs",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Adamantite_Legs_Topaz.png",
+  "IconProperties": {
+    "Scale": 0.415,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      -1.2,
+      -22.2
+    ]
+  },
+  "Model": "Items/Armor/Adamantite/Legs_Socketed.blockymodel",
+  "Texture": "Items/Armor/Adamantite/Topaz/Legs_Socket_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Adamantite_Legs",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Topaz",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Legs",
+    "BaseDamageResistance": 0,
+    "CosmeticsToHide": [
+      "Pants",
+      "Shoes"
+    ],
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.112,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.112,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 19,
+          "CalculationType": "Additive"
+        }
+      ]
+    },
+    "DamageClassEnhancement": {
+      "Light": [
+        {
+          "Amount": 0.04,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Adamantite"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Light": {
+    "Color": "#421",
+    "Radius": 0
+  },
+  "Variant": true,
+  "Interactions": {
+    "Equipped": {
+      "Interactions": [
+        {
+          "Type": "StatsCondition",
+          "Costs": {
+            "Stamina": 0.001
+          },
+          "LessThan": true,
+          "Next": {
+            "Type": "ApplyEffect",
+            "Effects": {
+              "Particles": [
+                {
+                  "SystemId": "Lightning",
+                  "TargetEntityPart": "Entity",
+                  "Scale": 0.5,
+                  "PositionOffset": {
+                    "Y": 0.1
+                  }
+                }
+              ]
+            },
+            "EffectId": "Armor_Topaz_Endure_Effect",
+            "Next": {
+              "Type": "Simple",
+              "RunTime": 30
+            }
+          },
+          "RunTime": 0.5
+        }
+      ]
+    }
+  }
+}

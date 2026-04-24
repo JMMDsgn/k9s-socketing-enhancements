@@ -1,0 +1,17 @@
+{
+  "Duration": 3,
+  "ApplicationEffects": {
+    "EntityBottomTint": "#eecf00",
+    "ScreenEffect": "ScreenEffects/Fire.png",
+    "EntityTopTint": "#ff9a00",
+    "HorizontalSpeedMultiplier": 0.25,
+    "Particles": [
+      {
+        "SystemId": "Lightning",
+        "TargetEntityPart": "Entity",
+        "Scale": 0.75
+      }
+    ],
+    "WorldSoundEventId": "SFX_Deployable_Totem_Slowing_Spawn"
+  }
+}

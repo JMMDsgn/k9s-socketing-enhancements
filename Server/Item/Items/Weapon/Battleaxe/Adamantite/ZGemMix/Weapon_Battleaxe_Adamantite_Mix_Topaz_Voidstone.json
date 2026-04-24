@@ -1,0 +1,276 @@
+{
+  "Parent": "Template_Weapon_Battleaxe",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Battleaxe_Adamantite_Mix_Topaz_Voidstone.name",
+    "Description": "server.items.Weapon_Mix_Topaz_Voidstone.description"
+  },
+  "Model": "Items/Weapon/Battleaxe/Adamantite/Adamantite_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Battleaxe/Adamantite/ZGemMix/Cobalt_Texture_Mix_Topaz_Voidstone.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Battleaxe_Adamantite_Mix_Topaz_Voidstone.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Battleaxe_Adamantite_Topaz",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Voidstone",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Battleaxes"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 58
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Down_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 28
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Swing_Down_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 35
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T1"
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 59
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T2"
+        }
+      ]
+    },
+    "Signature_Whirlwind_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 23
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "ApplyEffect",
+          "Entity": "Owner",
+          "EffectId": "Voidstone_Wrath_Heal_T3"
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 15.56,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 180,
+  "DurabilityLossOnHit": 0.45,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -49,
+      -49
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Fire_Green",
+      "TargetEntityPart": "Self",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": 0.1,
+        "X": 0.2,
+        "Z": 0
+      },
+      "TargetNodeName": "BladeCenter",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Aura_Topaz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": -0.25,
+        "X": 0.15,
+        "Z": 0.025
+      },
+      "TargetNodeName": "BladeCenter",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Fire_Green",
+      "TargetEntityPart": "Self",
+      "Scale": 0.45,
+      "PositionOffset": {
+        "Y": 0.1,
+        "X": 0.2,
+        "Z": 0
+      },
+      "TargetNodeName": "BladeCenter",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Aura_Topaz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": -0.25,
+        "X": 0.15,
+        "Z": 0.025
+      },
+      "TargetNodeName": "BladeCenter",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0.01
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "TargetNodeName": "BladeCenter",
+      "TrailId": "Medium_Flame",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": -0.1,
+        "Y": 0.05,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "TargetNodeName": "BladeCenter",
+      "TrailId": "Voidstone_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Variant": true
+}

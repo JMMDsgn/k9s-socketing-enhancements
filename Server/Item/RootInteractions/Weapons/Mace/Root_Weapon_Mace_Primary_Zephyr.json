@@ -1,0 +1,15 @@
+{
+  "RequireNewClick": true,
+  "ClickQueuingTimeout": 0.3,
+  "Cooldown": {
+    "Cooldown": 0.3
+  },
+  "Interactions": [
+    "Weapon_Mace_Primary_Zephyr"
+  ],
+  "Tags": {
+    "Attack": [
+      "Melee"
+    ]
+  }
+}

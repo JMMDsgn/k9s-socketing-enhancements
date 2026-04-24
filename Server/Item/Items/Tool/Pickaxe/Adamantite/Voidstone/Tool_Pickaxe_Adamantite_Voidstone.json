@@ -1,0 +1,157 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Tool_Pickaxe_Adamantite_Voidstone.name",
+    "Description": "server.items.Tool_Voidstone.description"
+  },
+  "Parent": "Tool_Pickaxe_Crude",
+  "Icon": "Icons/ItemsGenerated/Tool_Pickaxe_Adamantite_Voidstone.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Model": "Items/Tool/Pickaxe/Adamantite/Adamantite_Socketed.blockymodel",
+  "Texture": "Items/Tool/Pickaxe/Adamantite/Voidstone/Adamantite_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Tool_Pickaxe_Adamantite",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Voidstone",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Tools"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 1.0,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 1,
+        "GatherType": "Rocks",
+        "Quality": 5
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 0.34,
+        "GatherType": "VolcanicRocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreCopper"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreIron"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreSilver"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreGold"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreThorium"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreCobalt"
+      },
+      {
+        "Power": 0.25,
+        "GatherType": "OreAdamantite",
+        "Quality": 4
+      },
+      {
+        "Power": 0.125,
+        "GatherType": "OreMithril"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil",
+          "Wood"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
+  },
+  "MaxDurability": 400.0,
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      45,
+      270,
+      0
+    ],
+    "Translation": [
+      27,
+      -28
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Fire_Green",
+      "TargetNodeName": "Socket2",
+      "PositionOffset": {
+        "Z": 0.05,
+        "Y": -0.05
+      },
+      "Scale": 0.5
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Fire_Green",
+      "TargetNodeName": "Socket2",
+      "PositionOffset": {
+        "Z": 0.05,
+        "Y": -0.05
+      },
+      "Scale": 0.5
+    }
+  ],
+  "Variant": true,
+  "Interactions": {
+    "Primary": "Pickaxe_Attack_Voidstone"
+  }
+}

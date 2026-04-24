@@ -1,0 +1,8 @@
+{
+  "StatModifiers": {
+    "SignatureEnergy": 0.1
+  },
+  "ValueType": "Absolute",
+  "Duration": 0.1,
+  "OverlapBehavior": "Ignore"
+}

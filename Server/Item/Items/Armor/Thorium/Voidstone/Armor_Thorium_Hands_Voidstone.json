@@ -1,0 +1,157 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Armor_Thorium_Hands_Voidstone.name",
+    "Description": "server.items.Armor_Voidstone.description"
+  },
+  "Parent": "Armor_Iron_Hands",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Icon": "Icons/ItemsGenerated/Armor_Thorium_Hands_Voidstone.png",
+  "IconProperties": {
+    "Scale": 0.92,
+    "Rotation": [
+      22.5,
+      45,
+      22.5
+    ],
+    "Translation": [
+      15,
+      3
+    ]
+  },
+  "Model": "Items/Armor/Thorium/Hands_Socket.blockymodel",
+  "Texture": "Items/Armor/Thorium/Voidstone/Hands_Texture.png",
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Armor_Thorium_Hands",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Voidstone",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Armor"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ],
+    "KnowledgeRequired": false,
+    "TimeSeconds": 5
+  },
+  "Armor": {
+    "ArmorSlot": "Hands",
+    "BaseDamageResistance": 0,
+    "DamageResistance": {
+      "Physical": [
+        {
+          "Amount": 0.0512,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Projectile": [
+        {
+          "Amount": 0.0512,
+          "CalculationType": "Multiplicative"
+        }
+      ],
+      "Poison": [
+        {
+          "Amount": 0.12,
+          "CalculationType": "Multiplicative"
+        }
+      ]
+    },
+    "StatModifiers": {
+      "Health": [
+        {
+          "Amount": 10,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "MaxDurability": 120,
+  "Tags": {
+    "Type": [
+      "Armor"
+    ],
+    "Family": [
+      "Thorium",
+      "Socketed"
+    ]
+  },
+  "ItemSoundSetId": "ISS_Armor_Heavy",
+  "DurabilityLossOnHit": 0.5,
+  "Variant": true,
+  "Interactions": {
+    "Equipped": {
+      "Cooldown": {
+        "Cooldown": 2.5
+      },
+      "Interactions": [
+        {
+          "Type": "Selector",
+          "Selector": {
+            "Id": "AOECircle",
+            "Range": 3,
+            "Offset": {
+              "Y": -1.5
+            }
+          },
+          "HitEntity": {
+            "Interactions": [
+              {
+                "Type": "DamageEntity",
+                "DamageCalculator": {
+                  "BaseDamage": {
+                    "Elemental": 2
+                  },
+                  "RandomPercentageModifier": 0.2
+                },
+                "DamageEffects": {
+                  "WorldSoundEventId": "SFX_Void_Attack_Lifesteal",
+                  "ModelParticles": [
+                    {
+                      "SystemId": "Fire_Green_Void_Damage",
+                      "TargetNodeName": "Chest"
+                    }
+                  ]
+                },
+                "Next": {
+                  "Type": "ChangeStat",
+                  "StatModifiers": {
+                    "Health": 2
+                  }
+                }
+              },
+              {
+                "Type": "Simple",
+                "RunTime": 0.5
+              }
+            ]
+          },
+          "IgnoreOwner": true,
+          "Failed": {
+            "Type": "Simple",
+            "RunTime": 0.5
+          }
+        }
+      ]
+    }
+  },
+  "Light": {
+    "Color": "#214",
+    "Radius": 0
+  }
+}

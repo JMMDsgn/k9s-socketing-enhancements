@@ -1,0 +1,293 @@
+{
+  "Parent": "Template_Weapon_Sword",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Sword_Cobalt_Mix_Sapphire_Quartz.name",
+    "Description": "server.items.Weapon_Mix_Sapphire_Quartz.description"
+  },
+  "Model": "Items/Weapon/Sword/Cobalt/Cobalt_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Sword/Cobalt/ZGemMix/Cobalt_Texture_Mix_Sapphire_Quartz.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Sword_Cobalt_Mix_Sapphire_Quartz.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Sword_Cobalt_Sapphire",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Quartz",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Swords"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 12
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 0.5
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 12
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 0.5
+          }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 22
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 0.5
+          }
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 32
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 1
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 23
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 70
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.21,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -39,
+      -38
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.33,
+      "PositionOffset": {
+        "Y": -0.1
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "Color": "#254dff"
+    },
+    {
+      "SystemId": "Aura_Quartz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.33,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0
+      },
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.33,
+      "PositionOffset": {
+        "Y": -0.1
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "Color": "#254dff"
+    },
+    {
+      "SystemId": "Aura_Quartz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.33,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0
+      },
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.35,
+        "Z": -0.05
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Sapphire_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.4,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Quartz_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Interactions": {
+    "Held": {
+      "Interactions": [
+        {
+          "Type": "ChangeStat",
+          "ValueType": "Percent",
+          "StatModifiers": {
+            "Health": 0.25
+          },
+          "Entity": "User"
+        }
+      ]
+    }
+  },
+  "Variant": true
+}

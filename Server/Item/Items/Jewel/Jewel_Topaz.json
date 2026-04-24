@@ -1,0 +1,96 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Jewel_Topaz.name",
+    "Description": "server.items.Jewel_Topaz.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Jewel_Topaz.png",
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/Jewels/Jewel_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Jewels/Jewel_Topaz.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Crystal",
+    "Light": {
+      "Color": "#421",
+      "Radius": 0
+    }
+  },
+  "PlayerAnimationsId": "Item",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  },
+  "ItemLevel": 50,
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      34,
+      33,
+      33
+    ],
+    "Translation": [
+      1,
+      -5
+    ]
+  },
+  "Quality": "Rare",
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Particles": [
+    {
+      "SystemId": "Example_Glow_Square",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "",
+      "RotationOffset": {
+        "Pitch": 90,
+        "Roll": 45
+      },
+      "Color": "#ffeebf"
+    },
+    {
+      "SystemId": "Example_Glow_Front",
+      "Scale": 0.6,
+      "Color": "#ffcf94"
+    }
+  ],
+  "MaxStack": 1,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Crystal_Yellow",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Rock_Gem_Topaz",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Categories": [
+          "Arcane_Jewelworking"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 3,
+    "OutputQuantity": 1
+  }
+}

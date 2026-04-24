@@ -1,0 +1,47 @@
+{
+  "$Comment": "Run each attack in sequence",
+  "Type": "Chaining",
+  "ChainingAllowance": 0.6,
+  "Next": [
+    {
+      "Type": "Replace",
+      "Var": "Primary_Swing_Left",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Weapon_Daggers_Primary_Swing_Left_Zephyr"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "Var": "Primary_Swing_Right",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Weapon_Daggers_Primary_Swing_Right_Zephyr"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "Var": "Primary_Stab_Left",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Weapon_Daggers_Primary_Stab_Left_Zephyr"
+        ]
+      }
+    },
+    {
+      "Type": "Replace",
+      "Var": "Primary_Stab_Right",
+      "DefaultOk": true,
+      "DefaultValue": {
+        "Interactions": [
+          "Weapon_Daggers_Primary_Stab_Right_Zephyr"
+        ]
+      }
+    }
+  ]
+}

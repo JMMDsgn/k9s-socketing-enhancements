@@ -1,0 +1,271 @@
+{
+  "Parent": "Template_Weapon_Battleaxe",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Battleaxe_Cobalt_Mix_Diamond_Emerald.name",
+    "Description": "server.items.Weapon_Mix_Diamond_Emerald.description"
+  },
+  "Model": "Items/Weapon/Battleaxe/Cobalt/Cobalt_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Battleaxe/Cobalt/ZGemMix/Cobalt_Texture_Mix_Diamond_Emerald.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Battleaxe_Cobalt_Mix_Diamond_Emerald.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Battleaxe_Cobalt_Diamond",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Emerald",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Battleaxes"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 46
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 22
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 28
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Signature_Whirlwind_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 18
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.01,
+  "IconProperties": {
+    "Scale": 0.27,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -57,
+      -56
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 1.5,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.35,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.2,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 270
+      }
+    },
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.5,
+        "Z": 0.07,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3"
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.32,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 1.2,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SystemId": "Aura_Diamond",
+      "TargetEntityPart": "Self",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": 0,
+        "X": -0.6,
+        "Z": 0
+      },
+      "TargetNodeName": "Handle",
+      "RotationOffset": {
+        "Roll": 270
+      }
+    },
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": -0.4,
+        "Z": 0.07,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3"
+    }
+  ],
+  "Trails": [
+    {
+      "RotationOffset": {
+        "Pitch": 90,
+        "Roll": 0,
+        "Yaw": 90
+      },
+      "TargetNodeName": "BladeCenter",
+      "TrailId": "Wind_Diamond_Sword",
+      "TargetEntityPart": "PrimaryItem",
+      "PositionOffset": {
+        "X": -0.05
+      }
+    },
+    {
+      "PositionOffset": {
+        "X": -0.15,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "BladeCenter",
+      "TrailId": "Trail_Emerald",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Variant": true
+}

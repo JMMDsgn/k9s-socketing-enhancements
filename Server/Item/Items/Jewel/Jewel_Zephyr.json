@@ -1,0 +1,87 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Jewel_Zephyr.name",
+    "Description": "server.items.Jewel_Zephyr.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Jewel_Zephyr.png",
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/Jewels/Jewel_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Jewels/Jewel_Zephyr.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Crystal",
+    "Light": {
+      "Color": "#114",
+      "Radius": 0
+    }
+  },
+  "PlayerAnimationsId": "Item",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  },
+  "ItemLevel": 50,
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      34,
+      33,
+      33
+    ],
+    "Translation": [
+      1,
+      -5
+    ]
+  },
+  "Quality": "Rare",
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Particles": [
+    {
+      "SystemId": "Wind_Spirit_Tail",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "",
+      "Color": "#cff3f3"
+    }
+  ],
+  "MaxStack": 1,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Crystal_Cyan",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Rock_Gem_Zephyr",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Categories": [
+          "Arcane_Jewelworking"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 3,
+    "OutputQuantity": 1
+  }
+}

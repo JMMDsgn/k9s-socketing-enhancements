@@ -1,0 +1,102 @@
+{
+  "Parent": "Template_Weapon_Shield",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Shield_Cobalt_Sapphire.name",
+    "Description": "server.items.Weapon_Shield_Sapphire.description"
+  },
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Model": "Items/Weapon/Shield/Cobalt/Cobalt_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Shield/Cobalt/Sapphire/Cobalt_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Shield_Cobalt_Sapphire.png",
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Shield_Cobalt",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Sapphire",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Shields"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "$Comment": "Actively guarding with the weapon",
+          "Parent": "Weapon_Shield_Secondary_Guard_Wield_Sapphire",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Shield_T2_Raise",
+            "LocalSoundEventId": "SFX_Shield_T2_Raise_Local"
+          },
+          "StaminaCost": {
+            "Value": 12,
+            "CostType": "Damage"
+          },
+          "BlockedEffects": {
+            "WorldSoundEventId": "SFX_Shield_T2_Impact"
+          }
+        }
+      ]
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      315,
+      270,
+      0
+    ],
+    "Translation": [
+      -30,
+      -30
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.1
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "Color": "#254dff"
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.1
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "Color": "#254dff"
+    }
+  ],
+  "Variant": true
+}

@@ -1,0 +1,15 @@
+{
+  "TexturePath": "Trails/White.png",
+  "LifeSpan": 10,
+  "Start": {
+    "Width": 0.5,
+    "Color": "#ffd2f756"
+  },
+  "End": {
+    "Width": 0.0,
+    "Color": "#ffd2f700"
+  },
+  "LightInfluence": 0.0,
+  "Smooth": true,
+  "RenderMode": "BlendLinear"
+}

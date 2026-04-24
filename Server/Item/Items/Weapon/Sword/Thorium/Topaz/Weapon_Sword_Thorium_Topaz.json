@@ -1,0 +1,266 @@
+{
+  "Parent": "Template_Weapon_Sword",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Sword_Thorium_Topaz.name",
+    "Description": "server.items.Weapon_Topaz.description"
+  },
+  "Model": "Items/Weapon/Sword/Thorium/Thorium.blockymodel",
+  "Texture": "Items/Weapon/Sword/Thorium/Topaz/Thorium_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Sword_Thorium_Topaz.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Sword_Thorium",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Topaz",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Swords"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 12
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 12
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 22
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Thrust_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Primary_Thrust_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 46
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 3
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Spin_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Spin_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 37
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Vortexstrike_Stab_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Signature_Vortexstrike_Stab_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 84
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Sword_T2_Impact",
+            "LocalSoundEventId": "SFX_Sword_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Sword_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.21,
+  "IconProperties": {
+    "Scale": 0.35,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -33,
+      -33
+    ]
+  },
+  "Weapon": {
+    "EntityStatsToClear": [
+      "SignatureEnergy"
+    ],
+    "StatModifiers": {
+      "SignatureEnergy": [
+        {
+          "Amount": 20,
+          "CalculationType": "Additive"
+        }
+      ]
+    }
+  },
+  "Variant": true,
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Aura_Topaz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.12,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0.05,
+        "Z": -0.01
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SystemId": "Aura_Topaz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.12,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0.05,
+        "Z": -0.01
+      },
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0.15,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Origin_Item",
+      "TrailId": "Medium_Flame",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Particles": [
+    {
+      "SystemId": "Aura_Topaz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0.05,
+        "Z": -0.01
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    },
+    {
+      "SystemId": "Aura_Topaz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0.05,
+        "Z": -0.01
+      },
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ],
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "Parent": "Template_Weapon_Battleaxe",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Battleaxe_Thorium_Mix_Emerald_Topaz.name",
+    "Description": "server.items.Weapon_Mix_Emerald_Topaz.description"
+  },
+  "Model": "Items/Weapon/Battleaxe/Thorium/Thorium_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Battleaxe/Thorium/ZGemMix/Thorium_Texture_Mix_Emerald_Topaz.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Battleaxe_Thorium_Mix_Emerald_Topaz.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Battleaxe_Thorium_Emerald",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Topaz",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Battleaxes"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Down_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 46
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 13,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 22
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 8,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Swing_Down_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Swing_Down_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 28
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 9,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Downstrike_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Primary_Downstrike_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 50
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Signature_Whirlwind_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Signature_Whirlwind_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 18
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Battleaxe_T2_Impact",
+            "LocalSoundEventId": "SFX_Battleaxe_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": -2,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Battleaxe_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.45,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -44,
+      -42
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.5,
+        "Z": 0.02,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    },
+    {
+      "SystemId": "Aura_Topaz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.025
+      },
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": -0.4,
+        "Z": 0.02,
+        "X": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    },
+    {
+      "SystemId": "Aura_Topaz",
+      "TargetEntityPart": "Self",
+      "Scale": 0.25,
+      "PositionOffset": {
+        "Y": 0,
+        "X": 0,
+        "Z": 0.025
+      },
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 90
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": -0.15,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "BladeCenter",
+      "TrailId": "Trail_Emerald",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 90,
+        "Yaw": 0
+      },
+      "TargetNodeName": "BladeCenter",
+      "TrailId": "Medium_Flame",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ],
+  "Variant": true
+}

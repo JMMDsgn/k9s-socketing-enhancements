@@ -1,0 +1,87 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Jewel_Sapphire.name",
+    "Description": "server.items.Jewel_Sapphire.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Jewel_Sapphire.png",
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/Jewels/Jewel_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Jewels/Jewel_Sapphire.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Crystal",
+    "Light": {
+      "Color": "#114",
+      "Radius": 0
+    }
+  },
+  "PlayerAnimationsId": "Item",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  },
+  "ItemLevel": 50,
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      34,
+      33,
+      33
+    ],
+    "Translation": [
+      1,
+      -5
+    ]
+  },
+  "Quality": "Rare",
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Particles": [
+    {
+      "SystemId": "Plant_Mana_Tier3",
+      "Scale": 0.75,
+      "PositionOffset": {
+        "Y": -0.1
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "",
+      "Color": "#254dff"
+    }
+  ],
+  "MaxStack": 1,
+  "Recipe": {
+    "Input": [
+      {
+        "ItemId": "Ingredient_Crystal_Blue",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Rock_Gem_Sapphire",
+        "Quantity": 1
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Categories": [
+          "Arcane_Jewelworking"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "TimeSeconds": 3,
+    "OutputQuantity": 1
+  }
+}

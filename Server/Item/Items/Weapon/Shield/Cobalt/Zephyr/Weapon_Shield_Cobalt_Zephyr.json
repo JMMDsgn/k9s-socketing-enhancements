@@ -1,0 +1,129 @@
+{
+  "Parent": "Template_Weapon_Shield",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Shield_Cobalt_Zephyr.name",
+    "Description": "server.items.Weapon_Shield_Zephyr.description"
+  },
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Model": "Items/Weapon/Shield/Cobalt/Cobalt_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Shield/Cobalt/Zephyr/Cobalt_Texture.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Shield_Cobalt_Zephyr.png",
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Shield_Cobalt",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Zephyr",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Shields"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "$Comment": "Actively guarding with the weapon",
+          "Parent": "Weapon_Shield_Secondary_Guard_Wield_Quartz",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Shield_T2_Raise",
+            "LocalSoundEventId": "SFX_Shield_T2_Raise_Local"
+          },
+          "StaminaCost": {
+            "Value": 12,
+            "CostType": "Damage"
+          },
+          "BlockedEffects": {
+            "WorldSoundEventId": "SFX_Shield_T2_Impact"
+          }
+        }
+      ]
+    },
+    "Guard_Bash": {
+      "Interactions": [
+        {
+          "Type": "ApplyEffect",
+          "EffectId": "Stamina_Broken_Immune"
+        },
+        {
+          "$Comment": "Effects and stamina consumed upon a guard bash",
+          "Parent": "Weapon_Shield_Secondary_Guard_Bash_Zephyr",
+          "Effects": {
+            "WorldSoundEventId": "SFX_Shield_T2_Swing",
+            "LocalSoundEventId": "SFX_Shield_T2_Swing_Local"
+          },
+          "StatModifiers": {
+            "Stamina": -2
+          }
+        }
+      ]
+    }
+  },
+  "IconProperties": {
+    "Scale": 0.4,
+    "Rotation": [
+      315,
+      270,
+      0
+    ],
+    "Translation": [
+      -30,
+      -30
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": -0.2
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Pitch": 90
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.4,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": -0.2
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Pitch": 90
+      }
+    }
+  ],
+  "Variant": true
+}

@@ -1,0 +1,195 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Tool_Pickaxe_Cobalt_Zephyr.name",
+    "Description": "server.items.Tool_Zephyr.description"
+  },
+  "Parent": "Tool_Pickaxe_Crude",
+  "Icon": "Icons/ItemsGenerated/Tool_Pickaxe_Cobalt_Zephyr.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Model": "Items/Tool/Pickaxe/Cobalt/Cobalt_Socketed.blockymodel",
+  "Texture": "Items/Tool/Pickaxe/Cobalt/Zephyr/Cobalt_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Tool_Pickaxe_Cobalt",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Zephyr",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Tools"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Rocks",
+        "Quality": 4
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 0.17,
+        "GatherType": "VolcanicRocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreCopper"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreIron"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreSilver"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "OreGold"
+      },
+      {
+        "Power": 0.25,
+        "GatherType": "OreThorium"
+      },
+      {
+        "Power": 0.25,
+        "GatherType": "OreCobalt"
+      },
+      {
+        "Power": 0.125,
+        "GatherType": "OreAdamantite",
+        "Quality": 4
+      },
+      {
+        "Power": 0.084,
+        "GatherType": "OreMithril"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil",
+          "Wood"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
+  },
+  "MaxDurability": 325,
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      45,
+      270,
+      0
+    ],
+    "Translation": [
+      27,
+      -28
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Particles": [
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.1
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Pitch": 90
+      }
+    },
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.1
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Roll": 0,
+        "Pitch": 90
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.1
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Pitch": 90
+      }
+    },
+    {
+      "SystemId": "Wind_Spirit_Tentacle",
+      "Scale": 0.2,
+      "PositionOffset": {
+        "Y": 0,
+        "Z": 0.1
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket2",
+      "RotationOffset": {
+        "Roll": 0,
+        "Pitch": 90
+      }
+    }
+  ],
+  "Interactions": {
+    "Primary": "Pickaxe_Attack_Zephyr"
+  },
+  "Variant": true
+}

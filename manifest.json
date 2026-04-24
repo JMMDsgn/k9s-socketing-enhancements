@@ -1,0 +1,19 @@
+{  
+  "Group": "Kidpak9",
+  "Name": "K9's Socketing Enhancements",
+  "Version": "0.8.0",
+  "Description": "(Requires OreGenLibrary-v1.1.0 for new gem generation)Enhance your gear with the use of Gems, Crystals and Elemental Jewels.",
+  "Authors": [
+    {
+      "Name": "Kidpak9"
+    }
+  ],
+  "Website": "",
+  "ServerVersion": "2026.03.26-89796e57b",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "LoadBefore": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}

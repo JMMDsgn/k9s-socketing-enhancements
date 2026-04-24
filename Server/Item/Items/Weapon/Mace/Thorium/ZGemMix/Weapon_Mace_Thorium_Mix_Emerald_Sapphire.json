@@ -1,0 +1,580 @@
+{
+  "Parent": "Template_Weapon_Mace",
+  "TranslationProperties": {
+    "Name": "server.items.Weapon_Mace_Thorium_Mix_Emerald_Sapphire.name",
+    "Description": "server.items.Weapon_Mix_Emerald_Sapphire.description"
+  },
+  "Model": "Items/Weapon/Mace/Thorium/Thorium_Socketed.blockymodel",
+  "Texture": "Items/Weapon/Mace/Thorium/ZGemMix/Thorium_Texture_Mix_Emerald_Sapphire.png",
+  "Icon": "Icons/ItemsGenerated/Weapon_Mace_Thorium_Mix_Emerald_Sapphire.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Weapon_Mace_Thorium_Emerald",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Sapphire",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Maces"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "InteractionVars": {
+    "Swing_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 12,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 0.5
+          }
+        }
+      ]
+    },
+    "Swing_Right_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 12,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 0.5
+          }
+        }
+      ]
+    },
+    "Swing_Up_Left_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 36
+            }
+          },
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 12,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 0.5
+          }
+        }
+      ]
+    },
+    "Swing_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 18,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 1
+          }
+        }
+      ]
+    },
+    "Swing_Right_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Right_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 18,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 1
+          }
+        }
+      ]
+    },
+    "Swing_Up_Left_Charged_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Primary_Swing_Up_Left_Charged_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 52
+            }
+          },
+          "EntityStatsOnHit": [
+            {
+              "EntityStatId": "SignatureEnergy",
+              "Amount": 2
+            }
+          ],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 18,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        },
+        {
+          "Type": "ChangeStat",
+          "StatModifiers": {
+            "SignatureEnergy": 1
+          }
+        }
+      ]
+    },
+    "Groundslam_Damage": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Signature_Groundslam_Damage",
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 116
+            }
+          },
+          "EntityStatsOnHit": [],
+          "DamageEffects": {
+            "WorldSoundEventId": "SFX_Mace_T2_Impact",
+            "LocalSoundEventId": "SFX_Mace_T2_Impact"
+          }
+        },
+        {
+          "Type": "DamageEntity",
+          "DamageEffects": {
+            "Knockback": {
+              "Type": "Force",
+              "Force": 22,
+              "Direction": {
+                "Y": 1,
+                "Z": -1
+              },
+              "VelocityConfig": {
+                "AirResistance": 0.99,
+                "AirResistanceMax": 0.98,
+                "GroundResistance": 0.94,
+                "GroundResistanceMax": 0.3,
+                "Threshold": 3,
+                "Style": "Linear"
+              }
+            }
+          },
+          "DamageCalculator": {
+            "BaseDamage": {
+              "Physical": 0
+            },
+            "Class": "Light"
+          }
+        }
+      ]
+    },
+    "Guard_Wield": {
+      "Interactions": [
+        {
+          "Parent": "Weapon_Mace_Secondary_Guard_Wield",
+          "StaminaCost": {
+            "Value": 12.22,
+            "CostType": "Damage"
+          }
+        }
+      ]
+    }
+  },
+  "MaxDurability": 150,
+  "DurabilityLossOnHit": 0.5,
+  "IconProperties": {
+    "Scale": 0.3,
+    "Rotation": [
+      45,
+      90,
+      0
+    ],
+    "Translation": [
+      -44,
+      -42
+    ]
+  },
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  },
+  "Variant": true,
+  "Particles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "TargetEntityPart": "Self",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": -0.6,
+        "Z": 0.15,
+        "X": 0
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Yaw": 0,
+        "Pitch": 0
+      }
+    },
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "TargetEntityPart": "Self",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": -0.6,
+        "X": 0,
+        "Z": 0.15
+      },
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": -0.15,
+        "Z": 0.15
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "Color": "#254dff",
+      "RotationOffset": {
+        "Roll": -180
+      }
+    },
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.6,
+      "PositionOffset": {
+        "Y": -0.15,
+        "Z": 0.15
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3",
+      "Color": "#254dff",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "TargetEntityPart": "Self",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.6,
+        "Z": 0.15,
+        "X": 0
+      },
+      "TargetNodeName": "Socket",
+      "RotationOffset": {
+        "Roll": 0,
+        "Yaw": 0,
+        "Pitch": 0
+      }
+    },
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "TargetEntityPart": "Self",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.6,
+        "X": 0,
+        "Z": 0.15
+      },
+      "TargetNodeName": "Socket3",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    },
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.15,
+        "Z": 0.15
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket",
+      "Color": "#254dff",
+      "RotationOffset": {
+        "Roll": -180
+      }
+    },
+    {
+      "SystemId": "Aura_Sapphire",
+      "Scale": 0.5,
+      "PositionOffset": {
+        "Y": -0.15,
+        "Z": 0.15
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket3",
+      "Color": "#254dff",
+      "RotationOffset": {
+        "Roll": 0
+      }
+    }
+  ],
+  "Trails": [
+    {
+      "PositionOffset": {
+        "X": 0,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Handle2",
+      "TrailId": "Trail_Emerald",
+      "TargetEntityPart": "PrimaryItem"
+    },
+    {
+      "PositionOffset": {
+        "X": -0.1,
+        "Y": 0,
+        "Z": 0
+      },
+      "RotationOffset": {
+        "Pitch": 0,
+        "Roll": 0,
+        "Yaw": 0
+      },
+      "TargetNodeName": "Handle2",
+      "TrailId": "Sapphire_Trail",
+      "TargetEntityPart": "PrimaryItem"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Tool_Hatchet_Thorium_Emerald.name",
+    "Description": "server.items.Tool_Emerald.description"
+  },
+  "Parent": "Tool_Hatchet_Crude",
+  "Icon": "Icons/ItemsGenerated/Tool_Hatchet_Thorium_Emerald.png",
+  "Quality": "Epic",
+  "ItemLevel": 50,
+  "Model": "Items/Tool/Hatchet/Thorium/Thorium_Socketed.blockymodel",
+  "Texture": "Items/Tool/Hatchet/Thorium/Emerald/Thorium_Texture.png",
+  "Recipe": {
+    "TimeSeconds": 4,
+    "Input": [
+      {
+        "ItemId": "Tool_Hatchet_Thorium",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Jewel_Emerald",
+        "Quantity": 1
+      },
+      {
+        "ItemId": "Ingredient_Crystal_Blank",
+        "Quantity": 5
+      }
+    ],
+    "BenchRequirement": [
+      {
+        "Id": "Bench_Socketing",
+        "Type": "Crafting",
+        "Categories": [
+          "Jewelworking_Tools"
+        ],
+        "RequiredTierLevel": 1
+      }
+    ]
+  },
+  "Tool": {
+    "Specs": [
+      {
+        "Power": 1,
+        "GatherType": "SoftBlocks"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Soils"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Woods"
+      },
+      {
+        "Power": 0.05,
+        "GatherType": "Rocks"
+      },
+      {
+        "Power": 0.5,
+        "GatherType": "Benches"
+      },
+      {
+        "Power": 0.017,
+        "GatherType": "VolcanicRocks"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreCopper"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreIron"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreSilver"
+      },
+      {
+        "Power": 0.046,
+        "GatherType": "OreGold"
+      },
+      {
+        "Power": 0.042,
+        "GatherType": "OreThorium"
+      },
+      {
+        "Power": 0.042,
+        "GatherType": "OreCobalt"
+      },
+      {
+        "Power": 0.036,
+        "GatherType": "OreAdamantite"
+      },
+      {
+        "Power": 0.032,
+        "GatherType": "OreMithril"
+      }
+    ],
+    "DurabilityLossBlockTypes": [
+      {
+        "BlockSets": [
+          "Stone",
+          "Rock",
+          "Ores",
+          "Soil",
+          "Wood"
+        ],
+        "DurabilityLossOnHit": 0.25
+      }
+    ]
+  },
+  "MaxDurability": 325,
+  "Particles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": -0.3,
+        "Z": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    }
+  ],
+  "FirstPersonParticles": [
+    {
+      "SystemId": "Nature_Buff_Projectile",
+      "Scale": 0.3,
+      "PositionOffset": {
+        "Y": -0.3,
+        "Z": 0
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Socket"
+    }
+  ],
+  "IconProperties": {
+    "Scale": 0.45,
+    "Rotation": [
+      45,
+      270,
+      0
+    ],
+    "Translation": [
+      31,
+      -24
+    ]
+  },
+  "Interactions": {
+    "Primary": {
+      "Interactions": [
+        "Emerald_Tool_Hatchet_Primary"
+      ]
+    }
+  },
+  "Variant": true,
+  "Tags": {
+    "Family": [
+      "Socketed"
+    ]
+  }
+}

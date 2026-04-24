@@ -1,0 +1,84 @@
+{
+  "TranslationProperties": {
+    "Name": "server.items.Jewel_Diamond.name",
+    "Description": "server.items.Jewel_Diamond.description"
+  },
+  "Icon": "Icons/ItemsGenerated/Jewel_Diamond.png",
+  "Categories": [
+    "Items.Ingredients"
+  ],
+  "BlockType": {
+    "DrawType": "Model",
+    "Material": "Solid",
+    "Opacity": "Transparent",
+    "CustomModel": "Resources/Jewels/Jewel_Model.blockymodel",
+    "CustomModelTexture": [
+      {
+        "Texture": "Resources/Jewels/Jewel_Diamond.png",
+        "Weight": 1
+      }
+    ],
+    "BlockSoundSetId": "Crystal",
+    "Light": {
+      "Color": "#134",
+      "Radius": 0
+    }
+  },
+  "PlayerAnimationsId": "Item",
+  "Tags": {
+    "Type": [
+      "Ingredient"
+    ],
+    "Family": [
+      "Crystal"
+    ]
+  },
+  "ItemLevel": 50,
+  "IconProperties": {
+    "Scale": 1,
+    "Rotation": [
+      34,
+      33,
+      33
+    ],
+    "Translation": [
+      1,
+      -5
+    ]
+  },
+  "Quality": "Rare",
+  "ItemSoundSetId": "ISS_Items_Gems",
+  "Particles": [
+    {
+      "SystemId": "Aura_Sphere",
+      "Scale": 0.15,
+      "Color": "#d7f0f4",
+      "PositionOffset": {
+        "Y": -0.05
+      },
+      "TargetEntityPart": "Self",
+      "TargetNodeName": "Jewel"
+    }
+  ],
+  "MaxStack": 1,
+  "Recipe": {
+    "BenchRequirement": [
+      {
+        "Id": "Arcanebench",
+        "Categories": [
+          "Arcane_Jewelworking"
+        ],
+        "RequiredTierLevel": 2
+      }
+    ],
+    "Input": [
+      {
+        "ItemId": "Ingredient_Crystal_White",
+        "Quantity": 8
+      },
+      {
+        "ItemId": "Rock_Gem_Diamond"
+      }
+    ]
+  }
+}
