@@ -84,8 +84,7 @@
               },
               {
                 "ItemId": "Ingredient_Fabric_Scrap_Cindercloth",
-                "Quantity": 25,
-                "ResourceTypeId": ""
+                "Quantity": 25
               }
             ],
             "TimeSeconds": 3
